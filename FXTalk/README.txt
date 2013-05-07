@@ -4,3 +4,12 @@
 - Do not forget to change the info.plist for jdk.
 
 
+Executable downloads-------------
+MacOSX (>= Lion)
+	DMG - https://www.dropbox.com/s/c3j98bm97w9syys/FXTalk.dmg.zip
+	App - https://www.dropbox.com/s/ftn8jlunuje3j8c/FXTalk.app.zip
+Windows (32 bit)	
+	Msi - https://www.dropbox.com/s/02twujls1vdy9y3/FXTalk.msi.zip
+	Exe - https://www.dropbox.com/s/lub4oa64go25bz9/FXTalk.exe.zip
+
+
