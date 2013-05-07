@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+    <Product Id="633edc62-34ee-492c-bbc2-a4718c76e375" Name="FXTalk" 
+             Language="1033" Version="1.0"
+             Manufacturer="srikalyc" 
+             UpgradeCode="b9fb3ab3-88c4-4eab-8e85-8139e060c60e">
+        <Package Description="JavaFX  based cross platform Jabber client . " Comments="None"
+                 InstallerVersion="200" Compressed="yes"
+                 InstallScope="perUser"/>
+        <Media Id="1" Cabinet="simple.cab" EmbedCab="yes" />
+
+        <!-- We use RemoveFolderEx to ensure application folder is fully 
+             removed on uninstall. Including files created outside of MSI
+             after application had been installed (e.g. on AU or user state).
+             
+             Hovewer, RemoveFolderEx is only available in WiX 3.6, 
+             we will comment it out if we running older WiX.
+
+             RemoveFolderEx requires that we "remember" the path for uninstall.
+             Read the path value and set the APPLICATIONFOLDER property with the value.
+        -->
+        <Property Id="APPLICATIONFOLDER">
+            <RegistrySearch Key="SOFTWARE\srikalyc\FXTalk" 
+                            Root="HKCU" Type="raw" 
+                            Id="APPLICATIONFOLDER_REGSEARCH" Name="Path" />
+        </Property>
+        <DirectoryRef Id="APPLICATIONFOLDER">
+            <Component Id="CleanupMainApplicationFolder" Guid="*">
+                <RegistryValue Root="HKCU"
+                                   Key="SOFTWARE\srikalyc\FXTalk"
+                                   Name="Path" Type="string" Value="[APPLICATIONFOLDER]"
+                                   KeyPath="yes" />
+                <!-- We need to use APPLICATIONFOLDER variable here or RemoveFolderEx
+                     will not remove on "install". But only if WiX 3.6 is used. -->
+                     
+                  <util:RemoveFolderEx On="uninstall" Property="APPLICATIONFOLDER" />
+                
+            </Component>
+        </DirectoryRef>        
+        <?include bundle.wxi ?>
+        <UI/>
+        <Icon Id="DesktopIcon.exe" SourceFile="FXTalk.ico" />
+        <Icon Id="StartMenuIcon.exe" SourceFile="FXTalk.ico" />
+    </Product>
+</Wix>

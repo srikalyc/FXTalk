@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See commented blocks below for -->
+<!-- some examples of how to customize the build. -->
+<!-- (If you delete it and reopen the project it will be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Test only use this build script if -->
+<!-- the Compile on Save feature is turned off for the project. -->
+<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog box.-->
+<project name="FXTalk" default="default" basedir="."  xmlns:fx="javafx:com.sun.javafx.tools.ant">
+    <description>Builds, tests, and runs the project FXTalk.</description>
+    <property name="lib.dir" value="${basedir}${file.separator}lib"/>
+    <property name="full.dist.dir" value="${basedir}${file.separator}dist"/>
+    <property name="outisay" value="${basedir}${file.separator}out"/>
+    <property name="javafx.application.class" value="fxtalk.FXTalkApp"/>
+    <!-- The following loads task definitions from ant contrib for tasks like if then else etc--> 
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties"><!--This path is within the jar file-->
+        <classpath>
+            <pathelement location="lib/ant-contrib-1.0.jar"/>
+        </classpath>
+    </taskdef>    
+    <!-- The following loads task definitions from ant-javafx for deplying,artifact generation etc--> 
+    <taskdef resource="com/sun/javafx/tools/ant/antlib.xml"      
+             uri="javafx:com.sun.javafx.tools.ant"
+             classpath="${basedir}${file.separator}package${file.separator}linux${path.separator}${basedir}${file.separator}package${file.separator}macosx${path.separator}${basedir}${file.separator}package${file.separator}windows${path.separator}.${path.separator}${basedir}${file.separator}lib${file.separator}ant-javafx.jar">
+    </taskdef>
+    <import file="nbproject/build-impl.xml"/>
+    <!--
+
+    There exist several targets which are by default empty and which can be 
+    used for execution of your tasks. These targets are usually executed 
+    before and after some main targets. They are: 
+
+      -pre-init:                 called before initialization of project properties
+      -post-init:                called after initialization of project properties
+      -pre-compile:              called before javac compilation
+      -post-compile:             called after javac compilation
+      -pre-compile-single:       called before javac compilation of single file
+      -post-compile-single:      called after javac compilation of single file
+      -pre-compile-test:         called before javac compilation of JUnit tests
+      -post-compile-test:        called after javac compilation of JUnit tests
+      -pre-compile-test-single:  called before javac compilation of single JUnit test
+      -post-compile-test-single: called after javac compilation of single JUunit test
+      -pre-jar:                  called before JAR building
+      -post-jar:                 called after JAR building
+      -post-clean:               called after cleaning build products
+
+    (Targets beginning with '-' are not intended to be called on their own.)
+
+    Example of inserting an obfuscator after compilation could look like this:
+
+        <target name="-post-compile">
+            <obfuscate>
+                <fileset dir="${build.classes.dir}"/>
+            </obfuscate>
+        </target>
+
+    For list of available properties check the imported 
+    nbproject/build-impl.xml file. 
+
+
+    Another way to customize the build is by overriding existing main targets.
+    The targets of interest are: 
+
+      -init-macrodef-javac:     defines macro for javac compilation
+      -init-macrodef-junit:     defines macro for junit execution
+      -init-macrodef-debug:     defines macro for class debugging
+      -init-macrodef-java:      defines macro for class execution
+      -do-jar-with-manifest:    JAR building (if you are using a manifest)
+      -do-jar-without-manifest: JAR building (if you are not using a manifest)
+      run:                      execution of project 
+      -javadoc-build:           Javadoc generation
+      test-report:              JUnit report generation
+
+    An example of overriding the target for project execution could look like this:
+
+        <target name="run" depends="FXTalk-impl.jar">
+            <exec dir="bin" executable="launcher.exe">
+                <arg file="${dist.jar}"/>
+            </exec>
+        </target>
+
+    Notice that the overridden target depends on the jar target and not only on 
+    the compile target as the regular run target does. Again, for a list of available 
+    properties which you can use, check the target you are overriding in the
+    nbproject/build-impl.xml file. 
+
+    -->
+    <!-- Builds artifacts for stand-alone,web-start,applet modes -->
+    <target name="post-jfx-deploy">
+       <echo message="${basedir}${file.separator}package${file.separator}linux${path.separator}${basedir}${file.separator}package${file.separator}macosx${path.separator}${basedir}${file.separator}package${file.separator}windows${path.separator}.${path.separator}${basedir}${file.separator}lib${file.separator}ant-javafx.jar"/>
+        <if>
+            <available file="${lib.dir}" type="dir"/>
+            <then>
+                <copydir src="${lib.dir}"  dest="${full.dist.dir}"/>               
+            </then>              
+        </if>
+        <fx:deploy width="${javafx.run.width}" height="${javafx.run.height}" 
+          outdir="${outisay}" nativeBundles="all" 
+                   outfile="${application.title}"  verbose="true">
+
+            <fx:application name="${application.title}" 
+                  mainClass="${javafx.application.class}"/>
+            <fx:resources>
+                <fx:fileset dir="${full.dist.dir}"/>
+                <fx:fileset dir="./package/windows/"/>
+                <fx:fileset dir="./package/macosx/"/>
+            </fx:resources>
+            <fx:info title="${application.title}" vendor="${application.vendor}"/>
+            <fx:platform>
+                <fx:jvmarg value="-Xmx768m"/>
+                <fx:jvmarg value="-XX:PermSize=256m"/>
+            </fx:platform>
+            <fx:permissions elevated="true"/>
+        </fx:deploy>          
+    </target>  
+</project>

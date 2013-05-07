@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<package>  
+   <job id="postImage">  
+    <script language="JScript">  
+     <![CDATA[  
+        var oFSO = new ActiveXObject("Scripting.FileSystemObject");  
+        var oFolder = oFSO.getFolder(".");  
+        var from1 = "C:\\Program Files\\Java\\jdk1.7.0_17\\jre\\lib\\ext\\sunjce_provider.jar";  
+        var from2 = "C:\\Program Files\\Java\\jdk1.7.0_17\\jre\\lib\\ext\\access-bridge.jar";  
+        var from3 = "C:\\Program Files\\Java\\jdk1.7.0_17\\jre\\lib\\ext\\jaccess.jar";  
+        var from4 = "C:\\Program Files\\Java\\jdk1.7.0_17\\jre\\lib\\ext\\sunpkcs11.jar";  
+        var from5 = "C:\\Program Files\\Java\\jdk1.7.0_17\\jre\\lib\\ext\\dnsns.jar";  
+        var from6 = "C:\\Program Files\\Java\\jdk1.7.0_17\\jre\\lib\\ext\\localedata.jar";  
+        var from7 = "C:\\Program Files\\Java\\jdk1.7.0_17\\jre\\lib\\ext\\sunec.jar";  
+        var from8 = "C:\\Program Files\\Java\\jdk1.7.0_17\\jre\\lib\\ext\\sunmscapi.jar";  
+        var from9 = "C:\\Program Files\\Java\\jdk1.7.0_17\\jre\\lib\\ext\\zipfs.jar";  
+        var to1 = "C:\\Users\\srikalyc\\Documents\\NetBeansProjects\\FXTalk\\dist\\bundles\\FXTalk\\runtime\\jre\\lib\\ext";  
+        var to2 = ".\\FXTalk\\runtime\\jre\\lib\\ext";  
+        if (!oFSO.FolderExists(to1)) {  
+          oFSO.CreateFolder(to1);  
+        }  
+        if (!oFSO.FolderExists(to2)) {  
+          oFSO.CreateFolder(to2);  
+        }  
+        to1 += "\\";  
+        to2 += "\\";  
+        oFSO.CopyFile(from1, to1);  
+        oFSO.CopyFile(from2, to1);  
+        oFSO.CopyFile(from3, to1);  
+        oFSO.CopyFile(from4, to1);  
+        oFSO.CopyFile(from5, to1);  
+        oFSO.CopyFile(from6, to1);  
+        oFSO.CopyFile(from7, to1);  
+        oFSO.CopyFile(from8, to1);  
+        oFSO.CopyFile(from9, to1);  
+
+        oFSO.CopyFile(from1, to2);  
+        oFSO.CopyFile(from2, to2);  
+        oFSO.CopyFile(from3, to2);  
+        oFSO.CopyFile(from4, to2);  
+        oFSO.CopyFile(from5, to2);  
+        oFSO.CopyFile(from6, to2);  
+        oFSO.CopyFile(from7, to2);  
+        oFSO.CopyFile(from8, to2);  
+        oFSO.CopyFile(from9, to2);  
+     ]]>  
+    </script>  
+   </job>  
+</package>                 

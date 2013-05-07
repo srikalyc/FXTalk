@@ -1,0 +1,1574 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Include>
+ <Directory Id="TARGETDIR" Name="SourceDir">
+  <Directory Name="AppData" Id="LocalAppDataFolder">
+   <Directory Id="APPLICATIONFOLDER" Name="FXTalk">
+     <Component Id="comp0" DiskId="1" Guid="2b71120c-6ad8-4efe-971c-2986dfb92f14">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir0" On="uninstall" />
+        <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+         <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+       </RegistryKey>
+       <File Id="LauncherId" Name="FXTalk.exe"  Source="FXTalk.exe">
+         <Shortcut Id="ExeShortcut" Directory="ProgramMenuDir" Name="FXTalk" Advertise="no" Icon="StartMenuIcon.exe" IconIndex="0" />
+       </File>
+       <File Id="FileId1" Name="FXTalk.ico"  Source="FXTalk.ico">
+       </File>
+     </Component>
+     <Directory Id="dirid2" Name="app">
+      <Component Id="comp1" DiskId="1" Guid="3fa9904b-4d38-4ccc-8a4a-066d4728069d">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir3" On="uninstall" />
+         <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+          <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+        </RegistryKey>
+        <File Id="FileId4" Name="FXTalk.jar"  Source="app\FXTalk.jar">
+        </File>
+        <File Id="FileId5" Name="package.cfg"  Source="app\package.cfg">
+        </File>
+      </Component>
+      <Directory Id="dirid6" Name="lib">
+       <Component Id="comp2" DiskId="1" Guid="78d1921f-2d2e-4c29-9b7a-3a748ee06319">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir7" On="uninstall" />
+          <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+           <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+         </RegistryKey>
+         <File Id="FileId8" Name="commons-io-2.4.jar"  Source="app\lib\commons-io-2.4.jar">
+         </File>
+         <File Id="FileId9" Name="ScenicView.jar"  Source="app\lib\ScenicView.jar">
+         </File>
+         <File Id="FileId10" Name="smack.jar"  Source="app\lib\smack.jar">
+         </File>
+         <File Id="FileId11" Name="smackx-debug.jar"  Source="app\lib\smackx-debug.jar">
+         </File>
+         <File Id="FileId12" Name="smackx-jingle.jar"  Source="app\lib\smackx-jingle.jar">
+         </File>
+         <File Id="FileId13" Name="smackx.jar"  Source="app\lib\smackx.jar">
+         </File>
+       </Component>
+      </Directory>
+     </Directory>
+     <Directory Id="dirid14" Name="runtime">
+      <Component Id="comp3" DiskId="1" Guid="01d5b6fc-1c69-461a-a7db-8b0210dc1cca">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir15" On="uninstall" />
+         <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+          <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+        </RegistryKey>
+      </Component>
+      <Directory Id="dirid16" Name="jre">
+       <Component Id="comp4" DiskId="1" Guid="087ef8b7-97ce-4b22-b3ca-a4a364f2e2b3">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir17" On="uninstall" />
+          <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+           <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+         </RegistryKey>
+         <File Id="FileId18" Name="COPYRIGHT"  Source="runtime\jre\COPYRIGHT">
+         </File>
+         <File Id="FileId19" Name="LICENSE"  Source="runtime\jre\LICENSE">
+         </File>
+         <File Id="FileId20" Name="README.txt"  Source="runtime\jre\README.txt">
+         </File>
+         <File Id="FileId21" Name="THIRDPARTYLICENSEREADME-JAVAFX.txt"  Source="runtime\jre\THIRDPARTYLICENSEREADME-JAVAFX.txt">
+         </File>
+         <File Id="FileId22" Name="THIRDPARTYLICENSEREADME.txt"  Source="runtime\jre\THIRDPARTYLICENSEREADME.txt">
+         </File>
+         <File Id="FileId23" Name="Welcome.html"  Source="runtime\jre\Welcome.html">
+         </File>
+       </Component>
+       <Directory Id="dirid24" Name="bin">
+        <Component Id="comp5" DiskId="1" Guid="2e46ea6c-eb0e-41ca-aeec-c357dfd55439">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir25" On="uninstall" />
+           <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+            <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+          </RegistryKey>
+          <File Id="FileId26" Name="attach.dll"  Source="runtime\jre\bin\attach.dll">
+          </File>
+          <File Id="FileId27" Name="awt.dll"  Source="runtime\jre\bin\awt.dll">
+          </File>
+          <File Id="FileId28" Name="dcpr.dll"  Source="runtime\jre\bin\dcpr.dll">
+          </File>
+          <File Id="FileId29" Name="decora-sse.dll"  Source="runtime\jre\bin\decora-sse.dll">
+          </File>
+          <File Id="FileId30" Name="deploy.dll"  Source="runtime\jre\bin\deploy.dll">
+          </File>
+          <File Id="FileId31" Name="dt_shmem.dll"  Source="runtime\jre\bin\dt_shmem.dll">
+          </File>
+          <File Id="FileId32" Name="dt_socket.dll"  Source="runtime\jre\bin\dt_socket.dll">
+          </File>
+          <File Id="FileId33" Name="fontmanager.dll"  Source="runtime\jre\bin\fontmanager.dll">
+          </File>
+          <File Id="FileId34" Name="fxplugins.dll"  Source="runtime\jre\bin\fxplugins.dll">
+          </File>
+          <File Id="FileId35" Name="glass.dll"  Source="runtime\jre\bin\glass.dll">
+          </File>
+          <File Id="FileId36" Name="glib-lite.dll"  Source="runtime\jre\bin\glib-lite.dll">
+          </File>
+          <File Id="FileId37" Name="gstreamer-lite.dll"  Source="runtime\jre\bin\gstreamer-lite.dll">
+          </File>
+          <File Id="FileId38" Name="hprof.dll"  Source="runtime\jre\bin\hprof.dll">
+          </File>
+          <File Id="FileId39" Name="instrument.dll"  Source="runtime\jre\bin\instrument.dll">
+          </File>
+          <File Id="FileId40" Name="j2pcsc.dll"  Source="runtime\jre\bin\j2pcsc.dll">
+          </File>
+          <File Id="FileId41" Name="j2pkcs11.dll"  Source="runtime\jre\bin\j2pkcs11.dll">
+          </File>
+          <File Id="FileId42" Name="jaas_nt.dll"  Source="runtime\jre\bin\jaas_nt.dll">
+          </File>
+          <File Id="FileId43" Name="java.dll"  Source="runtime\jre\bin\java.dll">
+          </File>
+          <File Id="FileId44" Name="JavaAccessBridge.dll"  Source="runtime\jre\bin\JavaAccessBridge.dll">
+          </File>
+          <File Id="FileId45" Name="javafx-font.dll"  Source="runtime\jre\bin\javafx-font.dll">
+          </File>
+          <File Id="FileId46" Name="javafx-iio.dll"  Source="runtime\jre\bin\javafx-iio.dll">
+          </File>
+          <File Id="FileId47" Name="java_crw_demo.dll"  Source="runtime\jre\bin\java_crw_demo.dll">
+          </File>
+          <File Id="FileId48" Name="jawt.dll"  Source="runtime\jre\bin\jawt.dll">
+          </File>
+          <File Id="FileId49" Name="JAWTAccessBridge.dll"  Source="runtime\jre\bin\JAWTAccessBridge.dll">
+          </File>
+          <File Id="FileId50" Name="JdbcOdbc.dll"  Source="runtime\jre\bin\JdbcOdbc.dll">
+          </File>
+          <File Id="FileId51" Name="jdwp.dll"  Source="runtime\jre\bin\jdwp.dll">
+          </File>
+          <File Id="FileId52" Name="jfr.dll"  Source="runtime\jre\bin\jfr.dll">
+          </File>
+          <File Id="FileId53" Name="jfxmedia.dll"  Source="runtime\jre\bin\jfxmedia.dll">
+          </File>
+          <File Id="FileId54" Name="jfxwebkit.dll"  Source="runtime\jre\bin\jfxwebkit.dll">
+          </File>
+          <File Id="FileId55" Name="jli.dll"  Source="runtime\jre\bin\jli.dll">
+          </File>
+          <File Id="FileId56" Name="jpeg.dll"  Source="runtime\jre\bin\jpeg.dll">
+          </File>
+          <File Id="FileId57" Name="jsdt.dll"  Source="runtime\jre\bin\jsdt.dll">
+          </File>
+          <File Id="FileId58" Name="jsound.dll"  Source="runtime\jre\bin\jsound.dll">
+          </File>
+          <File Id="FileId59" Name="jsoundds.dll"  Source="runtime\jre\bin\jsoundds.dll">
+          </File>
+          <File Id="FileId60" Name="kcms.dll"  Source="runtime\jre\bin\kcms.dll">
+          </File>
+          <File Id="FileId61" Name="libxml2.dll"  Source="runtime\jre\bin\libxml2.dll">
+          </File>
+          <File Id="FileId62" Name="libxslt.dll"  Source="runtime\jre\bin\libxslt.dll">
+          </File>
+          <File Id="FileId63" Name="management.dll"  Source="runtime\jre\bin\management.dll">
+          </File>
+          <File Id="FileId64" Name="mlib_image.dll"  Source="runtime\jre\bin\mlib_image.dll">
+          </File>
+          <File Id="FileId65" Name="msvcr100.dll"  Source="runtime\jre\bin\msvcr100.dll">
+          </File>
+          <File Id="FileId66" Name="net.dll"  Source="runtime\jre\bin\net.dll">
+          </File>
+          <File Id="FileId67" Name="nio.dll"  Source="runtime\jre\bin\nio.dll">
+          </File>
+          <File Id="FileId68" Name="npt.dll"  Source="runtime\jre\bin\npt.dll">
+          </File>
+          <File Id="FileId69" Name="prism-d3d.dll"  Source="runtime\jre\bin\prism-d3d.dll">
+          </File>
+          <File Id="FileId70" Name="rmi.dll"  Source="runtime\jre\bin\rmi.dll">
+          </File>
+          <File Id="FileId71" Name="sawindbg.dll"  Source="runtime\jre\bin\sawindbg.dll">
+          </File>
+          <File Id="FileId72" Name="splashscreen.dll"  Source="runtime\jre\bin\splashscreen.dll">
+          </File>
+          <File Id="FileId73" Name="sunec.dll"  Source="runtime\jre\bin\sunec.dll">
+          </File>
+          <File Id="FileId74" Name="sunmscapi.dll"  Source="runtime\jre\bin\sunmscapi.dll">
+          </File>
+          <File Id="FileId75" Name="t2k.dll"  Source="runtime\jre\bin\t2k.dll">
+          </File>
+          <File Id="FileId76" Name="unpack.dll"  Source="runtime\jre\bin\unpack.dll">
+          </File>
+          <File Id="FileId77" Name="verify.dll"  Source="runtime\jre\bin\verify.dll">
+          </File>
+          <File Id="FileId78" Name="w2k_lsa_auth.dll"  Source="runtime\jre\bin\w2k_lsa_auth.dll">
+          </File>
+          <File Id="FileId79" Name="WindowsAccessBridge.dll"  Source="runtime\jre\bin\WindowsAccessBridge.dll">
+          </File>
+          <File Id="FileId80" Name="zip.dll"  Source="runtime\jre\bin\zip.dll">
+          </File>
+        </Component>
+        <Directory Id="dirid81" Name="client">
+         <Component Id="comp6" DiskId="1" Guid="e5ab1cd1-d54e-408f-a106-c73569e5664d">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir82" On="uninstall" />
+            <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+             <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+           </RegistryKey>
+           <File Id="FileId83" Name="classes.jsa"  Source="runtime\jre\bin\client\classes.jsa">
+           </File>
+           <File Id="FileId84" Name="jvm.dll"  Source="runtime\jre\bin\client\jvm.dll">
+           </File>
+           <File Id="FileId85" Name="Xusage.txt"  Source="runtime\jre\bin\client\Xusage.txt">
+           </File>
+         </Component>
+        </Directory>
+        <Directory Id="dirid86" Name="plugin2">
+         <Component Id="comp7" DiskId="1" Guid="1a778528-7b35-49ae-acd4-c73e29eada9b">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir87" On="uninstall" />
+            <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+             <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+           </RegistryKey>
+           <File Id="FileId88" Name="msvcr100.dll"  Source="runtime\jre\bin\plugin2\msvcr100.dll">
+           </File>
+           <File Id="FileId89" Name="npjp2.dll"  Source="runtime\jre\bin\plugin2\npjp2.dll">
+           </File>
+         </Component>
+        </Directory>
+        <Directory Id="dirid90" Name="server">
+         <Component Id="comp8" DiskId="1" Guid="94d428fd-5585-4f85-8c40-f157bce2a99d">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir91" On="uninstall" />
+            <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+             <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+           </RegistryKey>
+           <File Id="FileId92" Name="jvm.dll"  Source="runtime\jre\bin\server\jvm.dll">
+           </File>
+           <File Id="FileId93" Name="Xusage.txt"  Source="runtime\jre\bin\server\Xusage.txt">
+           </File>
+         </Component>
+        </Directory>
+       </Directory>
+       <Directory Id="dirid94" Name="lib">
+        <Component Id="comp9" DiskId="1" Guid="7339f84f-d793-43b9-9125-45026f1d5f5e">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir95" On="uninstall" />
+           <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+            <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+          </RegistryKey>
+          <File Id="FileId96" Name="access-bridge.jar"  Source="runtime\jre\lib\access-bridge.jar">
+          </File>
+          <File Id="FileId97" Name="accessibility.properties"  Source="runtime\jre\lib\accessibility.properties">
+          </File>
+          <File Id="FileId98" Name="alt-rt.jar"  Source="runtime\jre\lib\alt-rt.jar">
+          </File>
+          <File Id="FileId99" Name="calendars.properties"  Source="runtime\jre\lib\calendars.properties">
+          </File>
+          <File Id="FileId100" Name="charsets.jar"  Source="runtime\jre\lib\charsets.jar">
+          </File>
+          <File Id="FileId101" Name="classlist"  Source="runtime\jre\lib\classlist">
+          </File>
+          <File Id="FileId102" Name="content-types.properties"  Source="runtime\jre\lib\content-types.properties">
+          </File>
+          <File Id="FileId103" Name="currency.data"  Source="runtime\jre\lib\currency.data">
+          </File>
+          <File Id="FileId104" Name="deploy.jar"  Source="runtime\jre\lib\deploy.jar">
+          </File>
+          <File Id="FileId105" Name="dnsns.jar"  Source="runtime\jre\lib\dnsns.jar">
+          </File>
+          <File Id="FileId106" Name="flavormap.properties"  Source="runtime\jre\lib\flavormap.properties">
+          </File>
+          <File Id="FileId107" Name="fontconfig.bfc"  Source="runtime\jre\lib\fontconfig.bfc">
+          </File>
+          <File Id="FileId108" Name="fontconfig.properties.src"  Source="runtime\jre\lib\fontconfig.properties.src">
+          </File>
+          <File Id="FileId109" Name="jaccess.jar"  Source="runtime\jre\lib\jaccess.jar">
+          </File>
+          <File Id="FileId110" Name="javafx.properties"  Source="runtime\jre\lib\javafx.properties">
+          </File>
+          <File Id="FileId111" Name="javaws.jar"  Source="runtime\jre\lib\javaws.jar">
+          </File>
+          <File Id="FileId112" Name="jce.jar"  Source="runtime\jre\lib\jce.jar">
+          </File>
+          <File Id="FileId113" Name="jfr.jar"  Source="runtime\jre\lib\jfr.jar">
+          </File>
+          <File Id="FileId114" Name="jfxrt.jar"  Source="runtime\jre\lib\jfxrt.jar">
+          </File>
+          <File Id="FileId115" Name="jsse.jar"  Source="runtime\jre\lib\jsse.jar">
+          </File>
+          <File Id="FileId116" Name="jvm.hprof.txt"  Source="runtime\jre\lib\jvm.hprof.txt">
+          </File>
+          <File Id="FileId117" Name="localedata.jar"  Source="runtime\jre\lib\localedata.jar">
+          </File>
+          <File Id="FileId118" Name="logging.properties"  Source="runtime\jre\lib\logging.properties">
+          </File>
+          <File Id="FileId119" Name="management-agent.jar"  Source="runtime\jre\lib\management-agent.jar">
+          </File>
+          <File Id="FileId120" Name="meta-index"  Source="runtime\jre\lib\meta-index">
+          </File>
+          <File Id="FileId121" Name="net.properties"  Source="runtime\jre\lib\net.properties">
+          </File>
+          <File Id="FileId122" Name="plugin.jar"  Source="runtime\jre\lib\plugin.jar">
+          </File>
+          <File Id="FileId123" Name="psfont.properties.ja"  Source="runtime\jre\lib\psfont.properties.ja">
+          </File>
+          <File Id="FileId124" Name="psfontj2d.properties"  Source="runtime\jre\lib\psfontj2d.properties">
+          </File>
+          <File Id="FileId125" Name="resources.jar"  Source="runtime\jre\lib\resources.jar">
+          </File>
+          <File Id="FileId126" Name="rt.jar"  Source="runtime\jre\lib\rt.jar">
+          </File>
+          <File Id="FileId127" Name="sound.properties"  Source="runtime\jre\lib\sound.properties">
+          </File>
+          <File Id="FileId128" Name="sunec.jar"  Source="runtime\jre\lib\sunec.jar">
+          </File>
+          <File Id="FileId129" Name="sunjce_provider.jar"  Source="runtime\jre\lib\sunjce_provider.jar">
+          </File>
+          <File Id="FileId130" Name="sunmscapi.jar"  Source="runtime\jre\lib\sunmscapi.jar">
+          </File>
+          <File Id="FileId131" Name="sunpkcs11.jar"  Source="runtime\jre\lib\sunpkcs11.jar">
+          </File>
+          <File Id="FileId132" Name="tzmappings"  Source="runtime\jre\lib\tzmappings">
+          </File>
+          <File Id="FileId133" Name="zipfs.jar"  Source="runtime\jre\lib\zipfs.jar">
+          </File>
+        </Component>
+        <Directory Id="dirid134" Name="cmm">
+         <Component Id="comp10" DiskId="1" Guid="b2f623d8-922a-4f1a-9b37-ba4266c7f7de">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir135" On="uninstall" />
+            <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+             <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+           </RegistryKey>
+           <File Id="FileId136" Name="CIEXYZ.pf"  Source="runtime\jre\lib\cmm\CIEXYZ.pf">
+           </File>
+           <File Id="FileId137" Name="GRAY.pf"  Source="runtime\jre\lib\cmm\GRAY.pf">
+           </File>
+           <File Id="FileId138" Name="LINEAR_RGB.pf"  Source="runtime\jre\lib\cmm\LINEAR_RGB.pf">
+           </File>
+           <File Id="FileId139" Name="PYCC.pf"  Source="runtime\jre\lib\cmm\PYCC.pf">
+           </File>
+           <File Id="FileId140" Name="sRGB.pf"  Source="runtime\jre\lib\cmm\sRGB.pf">
+           </File>
+         </Component>
+        </Directory>
+        <Directory Id="dirid141" Name="fonts">
+         <Component Id="comp11" DiskId="1" Guid="c00430b8-8d8d-46b8-999f-f7730c60f5c1">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir142" On="uninstall" />
+            <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+             <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+           </RegistryKey>
+           <File Id="FileId143" Name="LucidaBrightDemiBold.ttf"  Source="runtime\jre\lib\fonts\LucidaBrightDemiBold.ttf">
+           </File>
+           <File Id="FileId144" Name="LucidaBrightDemiItalic.ttf"  Source="runtime\jre\lib\fonts\LucidaBrightDemiItalic.ttf">
+           </File>
+           <File Id="FileId145" Name="LucidaBrightItalic.ttf"  Source="runtime\jre\lib\fonts\LucidaBrightItalic.ttf">
+           </File>
+           <File Id="FileId146" Name="LucidaBrightRegular.ttf"  Source="runtime\jre\lib\fonts\LucidaBrightRegular.ttf">
+           </File>
+           <File Id="FileId147" Name="LucidaSansDemiBold.ttf"  Source="runtime\jre\lib\fonts\LucidaSansDemiBold.ttf">
+           </File>
+           <File Id="FileId148" Name="LucidaSansRegular.ttf"  Source="runtime\jre\lib\fonts\LucidaSansRegular.ttf">
+           </File>
+           <File Id="FileId149" Name="LucidaTypewriterBold.ttf"  Source="runtime\jre\lib\fonts\LucidaTypewriterBold.ttf">
+           </File>
+           <File Id="FileId150" Name="LucidaTypewriterRegular.ttf"  Source="runtime\jre\lib\fonts\LucidaTypewriterRegular.ttf">
+           </File>
+         </Component>
+        </Directory>
+        <Directory Id="dirid151" Name="i386">
+         <Component Id="comp12" DiskId="1" Guid="ac1f10cd-2725-4c69-89de-6f858abea774">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir152" On="uninstall" />
+            <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+             <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+           </RegistryKey>
+           <File Id="FileId153" Name="jvm.cfg"  Source="runtime\jre\lib\i386\jvm.cfg">
+           </File>
+         </Component>
+        </Directory>
+        <Directory Id="dirid154" Name="images">
+         <Component Id="comp13" DiskId="1" Guid="5cf1a9aa-df1f-44ab-88f6-99da04e9c24f">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir155" On="uninstall" />
+            <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+             <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+           </RegistryKey>
+         </Component>
+         <Directory Id="dirid156" Name="cursors">
+          <Component Id="comp14" DiskId="1" Guid="4bbb9a9f-2332-4607-a9f6-dfd333ee049e">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir157" On="uninstall" />
+             <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+              <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+            </RegistryKey>
+            <File Id="FileId158" Name="cursors.properties"  Source="runtime\jre\lib\images\cursors\cursors.properties">
+            </File>
+            <File Id="FileId159" Name="invalid32x32.gif"  Source="runtime\jre\lib\images\cursors\invalid32x32.gif">
+            </File>
+            <File Id="FileId160" Name="win32_CopyDrop32x32.gif"  Source="runtime\jre\lib\images\cursors\win32_CopyDrop32x32.gif">
+            </File>
+            <File Id="FileId161" Name="win32_CopyNoDrop32x32.gif"  Source="runtime\jre\lib\images\cursors\win32_CopyNoDrop32x32.gif">
+            </File>
+            <File Id="FileId162" Name="win32_LinkDrop32x32.gif"  Source="runtime\jre\lib\images\cursors\win32_LinkDrop32x32.gif">
+            </File>
+            <File Id="FileId163" Name="win32_LinkNoDrop32x32.gif"  Source="runtime\jre\lib\images\cursors\win32_LinkNoDrop32x32.gif">
+            </File>
+            <File Id="FileId164" Name="win32_MoveDrop32x32.gif"  Source="runtime\jre\lib\images\cursors\win32_MoveDrop32x32.gif">
+            </File>
+            <File Id="FileId165" Name="win32_MoveNoDrop32x32.gif"  Source="runtime\jre\lib\images\cursors\win32_MoveNoDrop32x32.gif">
+            </File>
+          </Component>
+         </Directory>
+        </Directory>
+        <Directory Id="dirid166" Name="management">
+         <Component Id="comp15" DiskId="1" Guid="e45410e2-18b1-47f6-ad9d-23732ba5478f">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir167" On="uninstall" />
+            <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+             <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+           </RegistryKey>
+           <File Id="FileId168" Name="jmxremote.access"  Source="runtime\jre\lib\management\jmxremote.access">
+           </File>
+           <File Id="FileId169" Name="jmxremote.password.template"  Source="runtime\jre\lib\management\jmxremote.password.template">
+           </File>
+           <File Id="FileId170" Name="management.properties"  Source="runtime\jre\lib\management\management.properties">
+           </File>
+           <File Id="FileId171" Name="snmp.acl.template"  Source="runtime\jre\lib\management\snmp.acl.template">
+           </File>
+         </Component>
+        </Directory>
+        <Directory Id="dirid172" Name="security">
+         <Component Id="comp16" DiskId="1" Guid="0d708b55-da11-4f6d-95cb-9e06de8bcc80">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir173" On="uninstall" />
+            <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+             <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+           </RegistryKey>
+           <File Id="FileId174" Name="blacklist"  Source="runtime\jre\lib\security\blacklist">
+           </File>
+           <File Id="FileId175" Name="cacerts"  Source="runtime\jre\lib\security\cacerts">
+           </File>
+           <File Id="FileId176" Name="java.policy"  Source="runtime\jre\lib\security\java.policy">
+           </File>
+           <File Id="FileId177" Name="java.security"  Source="runtime\jre\lib\security\java.security">
+           </File>
+           <File Id="FileId178" Name="javafx.policy"  Source="runtime\jre\lib\security\javafx.policy">
+           </File>
+           <File Id="FileId179" Name="javaws.policy"  Source="runtime\jre\lib\security\javaws.policy">
+           </File>
+           <File Id="FileId180" Name="local_policy.jar"  Source="runtime\jre\lib\security\local_policy.jar">
+           </File>
+           <File Id="FileId181" Name="trusted.libraries"  Source="runtime\jre\lib\security\trusted.libraries">
+           </File>
+           <File Id="FileId182" Name="US_export_policy.jar"  Source="runtime\jre\lib\security\US_export_policy.jar">
+           </File>
+         </Component>
+        </Directory>
+        <Directory Id="dirid183" Name="servicetag">
+         <Component Id="comp17" DiskId="1" Guid="d187624f-e1cd-4d30-a01a-812eddc076a0">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir184" On="uninstall" />
+            <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+             <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+           </RegistryKey>
+           <File Id="FileId185" Name="jdk_header.png"  Source="runtime\jre\lib\servicetag\jdk_header.png">
+           </File>
+           <File Id="FileId186" Name="registration.xml"  Source="runtime\jre\lib\servicetag\registration.xml">
+           </File>
+         </Component>
+        </Directory>
+        <Directory Id="dirid187" Name="zi">
+         <Component Id="comp18" DiskId="1" Guid="cf85cb51-e01d-4741-8987-5e7290f0dd4b">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir188" On="uninstall" />
+            <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+             <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+           </RegistryKey>
+           <File Id="FileId189" Name="CET"  Source="runtime\jre\lib\zi\CET">
+           </File>
+           <File Id="FileId190" Name="CST6CDT"  Source="runtime\jre\lib\zi\CST6CDT">
+           </File>
+           <File Id="FileId191" Name="EET"  Source="runtime\jre\lib\zi\EET">
+           </File>
+           <File Id="FileId192" Name="EST"  Source="runtime\jre\lib\zi\EST">
+           </File>
+           <File Id="FileId193" Name="EST5EDT"  Source="runtime\jre\lib\zi\EST5EDT">
+           </File>
+           <File Id="FileId194" Name="GMT"  Source="runtime\jre\lib\zi\GMT">
+           </File>
+           <File Id="FileId195" Name="HST"  Source="runtime\jre\lib\zi\HST">
+           </File>
+           <File Id="FileId196" Name="MET"  Source="runtime\jre\lib\zi\MET">
+           </File>
+           <File Id="FileId197" Name="MST"  Source="runtime\jre\lib\zi\MST">
+           </File>
+           <File Id="FileId198" Name="MST7MDT"  Source="runtime\jre\lib\zi\MST7MDT">
+           </File>
+           <File Id="FileId199" Name="PST8PDT"  Source="runtime\jre\lib\zi\PST8PDT">
+           </File>
+           <File Id="FileId200" Name="WET"  Source="runtime\jre\lib\zi\WET">
+           </File>
+           <File Id="FileId201" Name="ZoneInfoMappings"  Source="runtime\jre\lib\zi\ZoneInfoMappings">
+           </File>
+         </Component>
+         <Directory Id="dirid202" Name="Africa">
+          <Component Id="comp19" DiskId="1" Guid="d78cf772-ba56-42ef-8b1c-a1d3d83c101d">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir203" On="uninstall" />
+             <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+              <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+            </RegistryKey>
+            <File Id="FileId204" Name="Abidjan"  Source="runtime\jre\lib\zi\Africa\Abidjan">
+            </File>
+            <File Id="FileId205" Name="Accra"  Source="runtime\jre\lib\zi\Africa\Accra">
+            </File>
+            <File Id="FileId206" Name="Addis_Ababa"  Source="runtime\jre\lib\zi\Africa\Addis_Ababa">
+            </File>
+            <File Id="FileId207" Name="Algiers"  Source="runtime\jre\lib\zi\Africa\Algiers">
+            </File>
+            <File Id="FileId208" Name="Asmara"  Source="runtime\jre\lib\zi\Africa\Asmara">
+            </File>
+            <File Id="FileId209" Name="Bamako"  Source="runtime\jre\lib\zi\Africa\Bamako">
+            </File>
+            <File Id="FileId210" Name="Bangui"  Source="runtime\jre\lib\zi\Africa\Bangui">
+            </File>
+            <File Id="FileId211" Name="Banjul"  Source="runtime\jre\lib\zi\Africa\Banjul">
+            </File>
+            <File Id="FileId212" Name="Bissau"  Source="runtime\jre\lib\zi\Africa\Bissau">
+            </File>
+            <File Id="FileId213" Name="Blantyre"  Source="runtime\jre\lib\zi\Africa\Blantyre">
+            </File>
+            <File Id="FileId214" Name="Brazzaville"  Source="runtime\jre\lib\zi\Africa\Brazzaville">
+            </File>
+            <File Id="FileId215" Name="Bujumbura"  Source="runtime\jre\lib\zi\Africa\Bujumbura">
+            </File>
+            <File Id="FileId216" Name="Cairo"  Source="runtime\jre\lib\zi\Africa\Cairo">
+            </File>
+            <File Id="FileId217" Name="Casablanca"  Source="runtime\jre\lib\zi\Africa\Casablanca">
+            </File>
+            <File Id="FileId218" Name="Ceuta"  Source="runtime\jre\lib\zi\Africa\Ceuta">
+            </File>
+            <File Id="FileId219" Name="Conakry"  Source="runtime\jre\lib\zi\Africa\Conakry">
+            </File>
+            <File Id="FileId220" Name="Dakar"  Source="runtime\jre\lib\zi\Africa\Dakar">
+            </File>
+            <File Id="FileId221" Name="Dar_es_Salaam"  Source="runtime\jre\lib\zi\Africa\Dar_es_Salaam">
+            </File>
+            <File Id="FileId222" Name="Djibouti"  Source="runtime\jre\lib\zi\Africa\Djibouti">
+            </File>
+            <File Id="FileId223" Name="Douala"  Source="runtime\jre\lib\zi\Africa\Douala">
+            </File>
+            <File Id="FileId224" Name="El_Aaiun"  Source="runtime\jre\lib\zi\Africa\El_Aaiun">
+            </File>
+            <File Id="FileId225" Name="Freetown"  Source="runtime\jre\lib\zi\Africa\Freetown">
+            </File>
+            <File Id="FileId226" Name="Gaborone"  Source="runtime\jre\lib\zi\Africa\Gaborone">
+            </File>
+            <File Id="FileId227" Name="Harare"  Source="runtime\jre\lib\zi\Africa\Harare">
+            </File>
+            <File Id="FileId228" Name="Johannesburg"  Source="runtime\jre\lib\zi\Africa\Johannesburg">
+            </File>
+            <File Id="FileId229" Name="Juba"  Source="runtime\jre\lib\zi\Africa\Juba">
+            </File>
+            <File Id="FileId230" Name="Kampala"  Source="runtime\jre\lib\zi\Africa\Kampala">
+            </File>
+            <File Id="FileId231" Name="Khartoum"  Source="runtime\jre\lib\zi\Africa\Khartoum">
+            </File>
+            <File Id="FileId232" Name="Kigali"  Source="runtime\jre\lib\zi\Africa\Kigali">
+            </File>
+            <File Id="FileId233" Name="Kinshasa"  Source="runtime\jre\lib\zi\Africa\Kinshasa">
+            </File>
+            <File Id="FileId234" Name="Lagos"  Source="runtime\jre\lib\zi\Africa\Lagos">
+            </File>
+            <File Id="FileId235" Name="Libreville"  Source="runtime\jre\lib\zi\Africa\Libreville">
+            </File>
+            <File Id="FileId236" Name="Lome"  Source="runtime\jre\lib\zi\Africa\Lome">
+            </File>
+            <File Id="FileId237" Name="Luanda"  Source="runtime\jre\lib\zi\Africa\Luanda">
+            </File>
+            <File Id="FileId238" Name="Lubumbashi"  Source="runtime\jre\lib\zi\Africa\Lubumbashi">
+            </File>
+            <File Id="FileId239" Name="Lusaka"  Source="runtime\jre\lib\zi\Africa\Lusaka">
+            </File>
+            <File Id="FileId240" Name="Malabo"  Source="runtime\jre\lib\zi\Africa\Malabo">
+            </File>
+            <File Id="FileId241" Name="Maputo"  Source="runtime\jre\lib\zi\Africa\Maputo">
+            </File>
+            <File Id="FileId242" Name="Maseru"  Source="runtime\jre\lib\zi\Africa\Maseru">
+            </File>
+            <File Id="FileId243" Name="Mbabane"  Source="runtime\jre\lib\zi\Africa\Mbabane">
+            </File>
+            <File Id="FileId244" Name="Mogadishu"  Source="runtime\jre\lib\zi\Africa\Mogadishu">
+            </File>
+            <File Id="FileId245" Name="Monrovia"  Source="runtime\jre\lib\zi\Africa\Monrovia">
+            </File>
+            <File Id="FileId246" Name="Nairobi"  Source="runtime\jre\lib\zi\Africa\Nairobi">
+            </File>
+            <File Id="FileId247" Name="Ndjamena"  Source="runtime\jre\lib\zi\Africa\Ndjamena">
+            </File>
+            <File Id="FileId248" Name="Niamey"  Source="runtime\jre\lib\zi\Africa\Niamey">
+            </File>
+            <File Id="FileId249" Name="Nouakchott"  Source="runtime\jre\lib\zi\Africa\Nouakchott">
+            </File>
+            <File Id="FileId250" Name="Ouagadougou"  Source="runtime\jre\lib\zi\Africa\Ouagadougou">
+            </File>
+            <File Id="FileId251" Name="Porto-Novo"  Source="runtime\jre\lib\zi\Africa\Porto-Novo">
+            </File>
+            <File Id="FileId252" Name="Sao_Tome"  Source="runtime\jre\lib\zi\Africa\Sao_Tome">
+            </File>
+            <File Id="FileId253" Name="Tripoli"  Source="runtime\jre\lib\zi\Africa\Tripoli">
+            </File>
+            <File Id="FileId254" Name="Tunis"  Source="runtime\jre\lib\zi\Africa\Tunis">
+            </File>
+            <File Id="FileId255" Name="Windhoek"  Source="runtime\jre\lib\zi\Africa\Windhoek">
+            </File>
+          </Component>
+         </Directory>
+         <Directory Id="dirid256" Name="America">
+          <Component Id="comp20" DiskId="1" Guid="2f1fed5d-cc96-426a-9903-3261eb312f61">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir257" On="uninstall" />
+             <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+              <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+            </RegistryKey>
+            <File Id="FileId258" Name="Adak"  Source="runtime\jre\lib\zi\America\Adak">
+            </File>
+            <File Id="FileId259" Name="Anchorage"  Source="runtime\jre\lib\zi\America\Anchorage">
+            </File>
+            <File Id="FileId260" Name="Anguilla"  Source="runtime\jre\lib\zi\America\Anguilla">
+            </File>
+            <File Id="FileId261" Name="Antigua"  Source="runtime\jre\lib\zi\America\Antigua">
+            </File>
+            <File Id="FileId262" Name="Araguaina"  Source="runtime\jre\lib\zi\America\Araguaina">
+            </File>
+            <File Id="FileId263" Name="Aruba"  Source="runtime\jre\lib\zi\America\Aruba">
+            </File>
+            <File Id="FileId264" Name="Asuncion"  Source="runtime\jre\lib\zi\America\Asuncion">
+            </File>
+            <File Id="FileId265" Name="Atikokan"  Source="runtime\jre\lib\zi\America\Atikokan">
+            </File>
+            <File Id="FileId266" Name="Bahia"  Source="runtime\jre\lib\zi\America\Bahia">
+            </File>
+            <File Id="FileId267" Name="Bahia_Banderas"  Source="runtime\jre\lib\zi\America\Bahia_Banderas">
+            </File>
+            <File Id="FileId268" Name="Barbados"  Source="runtime\jre\lib\zi\America\Barbados">
+            </File>
+            <File Id="FileId269" Name="Belem"  Source="runtime\jre\lib\zi\America\Belem">
+            </File>
+            <File Id="FileId270" Name="Belize"  Source="runtime\jre\lib\zi\America\Belize">
+            </File>
+            <File Id="FileId271" Name="Blanc-Sablon"  Source="runtime\jre\lib\zi\America\Blanc-Sablon">
+            </File>
+            <File Id="FileId272" Name="Boa_Vista"  Source="runtime\jre\lib\zi\America\Boa_Vista">
+            </File>
+            <File Id="FileId273" Name="Bogota"  Source="runtime\jre\lib\zi\America\Bogota">
+            </File>
+            <File Id="FileId274" Name="Boise"  Source="runtime\jre\lib\zi\America\Boise">
+            </File>
+            <File Id="FileId275" Name="Cambridge_Bay"  Source="runtime\jre\lib\zi\America\Cambridge_Bay">
+            </File>
+            <File Id="FileId276" Name="Campo_Grande"  Source="runtime\jre\lib\zi\America\Campo_Grande">
+            </File>
+            <File Id="FileId277" Name="Cancun"  Source="runtime\jre\lib\zi\America\Cancun">
+            </File>
+            <File Id="FileId278" Name="Caracas"  Source="runtime\jre\lib\zi\America\Caracas">
+            </File>
+            <File Id="FileId279" Name="Cayenne"  Source="runtime\jre\lib\zi\America\Cayenne">
+            </File>
+            <File Id="FileId280" Name="Cayman"  Source="runtime\jre\lib\zi\America\Cayman">
+            </File>
+            <File Id="FileId281" Name="Chicago"  Source="runtime\jre\lib\zi\America\Chicago">
+            </File>
+            <File Id="FileId282" Name="Chihuahua"  Source="runtime\jre\lib\zi\America\Chihuahua">
+            </File>
+            <File Id="FileId283" Name="Costa_Rica"  Source="runtime\jre\lib\zi\America\Costa_Rica">
+            </File>
+            <File Id="FileId284" Name="Creston"  Source="runtime\jre\lib\zi\America\Creston">
+            </File>
+            <File Id="FileId285" Name="Cuiaba"  Source="runtime\jre\lib\zi\America\Cuiaba">
+            </File>
+            <File Id="FileId286" Name="Curacao"  Source="runtime\jre\lib\zi\America\Curacao">
+            </File>
+            <File Id="FileId287" Name="Danmarkshavn"  Source="runtime\jre\lib\zi\America\Danmarkshavn">
+            </File>
+            <File Id="FileId288" Name="Dawson"  Source="runtime\jre\lib\zi\America\Dawson">
+            </File>
+            <File Id="FileId289" Name="Dawson_Creek"  Source="runtime\jre\lib\zi\America\Dawson_Creek">
+            </File>
+            <File Id="FileId290" Name="Denver"  Source="runtime\jre\lib\zi\America\Denver">
+            </File>
+            <File Id="FileId291" Name="Detroit"  Source="runtime\jre\lib\zi\America\Detroit">
+            </File>
+            <File Id="FileId292" Name="Dominica"  Source="runtime\jre\lib\zi\America\Dominica">
+            </File>
+            <File Id="FileId293" Name="Edmonton"  Source="runtime\jre\lib\zi\America\Edmonton">
+            </File>
+            <File Id="FileId294" Name="Eirunepe"  Source="runtime\jre\lib\zi\America\Eirunepe">
+            </File>
+            <File Id="FileId295" Name="El_Salvador"  Source="runtime\jre\lib\zi\America\El_Salvador">
+            </File>
+            <File Id="FileId296" Name="Fortaleza"  Source="runtime\jre\lib\zi\America\Fortaleza">
+            </File>
+            <File Id="FileId297" Name="Glace_Bay"  Source="runtime\jre\lib\zi\America\Glace_Bay">
+            </File>
+            <File Id="FileId298" Name="Godthab"  Source="runtime\jre\lib\zi\America\Godthab">
+            </File>
+            <File Id="FileId299" Name="Goose_Bay"  Source="runtime\jre\lib\zi\America\Goose_Bay">
+            </File>
+            <File Id="FileId300" Name="Grand_Turk"  Source="runtime\jre\lib\zi\America\Grand_Turk">
+            </File>
+            <File Id="FileId301" Name="Grenada"  Source="runtime\jre\lib\zi\America\Grenada">
+            </File>
+            <File Id="FileId302" Name="Guadeloupe"  Source="runtime\jre\lib\zi\America\Guadeloupe">
+            </File>
+            <File Id="FileId303" Name="Guatemala"  Source="runtime\jre\lib\zi\America\Guatemala">
+            </File>
+            <File Id="FileId304" Name="Guayaquil"  Source="runtime\jre\lib\zi\America\Guayaquil">
+            </File>
+            <File Id="FileId305" Name="Guyana"  Source="runtime\jre\lib\zi\America\Guyana">
+            </File>
+            <File Id="FileId306" Name="Halifax"  Source="runtime\jre\lib\zi\America\Halifax">
+            </File>
+            <File Id="FileId307" Name="Havana"  Source="runtime\jre\lib\zi\America\Havana">
+            </File>
+            <File Id="FileId308" Name="Hermosillo"  Source="runtime\jre\lib\zi\America\Hermosillo">
+            </File>
+            <File Id="FileId309" Name="Inuvik"  Source="runtime\jre\lib\zi\America\Inuvik">
+            </File>
+            <File Id="FileId310" Name="Iqaluit"  Source="runtime\jre\lib\zi\America\Iqaluit">
+            </File>
+            <File Id="FileId311" Name="Jamaica"  Source="runtime\jre\lib\zi\America\Jamaica">
+            </File>
+            <File Id="FileId312" Name="Juneau"  Source="runtime\jre\lib\zi\America\Juneau">
+            </File>
+            <File Id="FileId313" Name="La_Paz"  Source="runtime\jre\lib\zi\America\La_Paz">
+            </File>
+            <File Id="FileId314" Name="Lima"  Source="runtime\jre\lib\zi\America\Lima">
+            </File>
+            <File Id="FileId315" Name="Los_Angeles"  Source="runtime\jre\lib\zi\America\Los_Angeles">
+            </File>
+            <File Id="FileId316" Name="Maceio"  Source="runtime\jre\lib\zi\America\Maceio">
+            </File>
+            <File Id="FileId317" Name="Managua"  Source="runtime\jre\lib\zi\America\Managua">
+            </File>
+            <File Id="FileId318" Name="Manaus"  Source="runtime\jre\lib\zi\America\Manaus">
+            </File>
+            <File Id="FileId319" Name="Martinique"  Source="runtime\jre\lib\zi\America\Martinique">
+            </File>
+            <File Id="FileId320" Name="Matamoros"  Source="runtime\jre\lib\zi\America\Matamoros">
+            </File>
+            <File Id="FileId321" Name="Mazatlan"  Source="runtime\jre\lib\zi\America\Mazatlan">
+            </File>
+            <File Id="FileId322" Name="Menominee"  Source="runtime\jre\lib\zi\America\Menominee">
+            </File>
+            <File Id="FileId323" Name="Merida"  Source="runtime\jre\lib\zi\America\Merida">
+            </File>
+            <File Id="FileId324" Name="Metlakatla"  Source="runtime\jre\lib\zi\America\Metlakatla">
+            </File>
+            <File Id="FileId325" Name="Mexico_City"  Source="runtime\jre\lib\zi\America\Mexico_City">
+            </File>
+            <File Id="FileId326" Name="Miquelon"  Source="runtime\jre\lib\zi\America\Miquelon">
+            </File>
+            <File Id="FileId327" Name="Moncton"  Source="runtime\jre\lib\zi\America\Moncton">
+            </File>
+            <File Id="FileId328" Name="Monterrey"  Source="runtime\jre\lib\zi\America\Monterrey">
+            </File>
+            <File Id="FileId329" Name="Montevideo"  Source="runtime\jre\lib\zi\America\Montevideo">
+            </File>
+            <File Id="FileId330" Name="Montreal"  Source="runtime\jre\lib\zi\America\Montreal">
+            </File>
+            <File Id="FileId331" Name="Montserrat"  Source="runtime\jre\lib\zi\America\Montserrat">
+            </File>
+            <File Id="FileId332" Name="Nassau"  Source="runtime\jre\lib\zi\America\Nassau">
+            </File>
+            <File Id="FileId333" Name="New_York"  Source="runtime\jre\lib\zi\America\New_York">
+            </File>
+            <File Id="FileId334" Name="Nipigon"  Source="runtime\jre\lib\zi\America\Nipigon">
+            </File>
+            <File Id="FileId335" Name="Nome"  Source="runtime\jre\lib\zi\America\Nome">
+            </File>
+            <File Id="FileId336" Name="Noronha"  Source="runtime\jre\lib\zi\America\Noronha">
+            </File>
+            <File Id="FileId337" Name="Ojinaga"  Source="runtime\jre\lib\zi\America\Ojinaga">
+            </File>
+            <File Id="FileId338" Name="Panama"  Source="runtime\jre\lib\zi\America\Panama">
+            </File>
+            <File Id="FileId339" Name="Pangnirtung"  Source="runtime\jre\lib\zi\America\Pangnirtung">
+            </File>
+            <File Id="FileId340" Name="Paramaribo"  Source="runtime\jre\lib\zi\America\Paramaribo">
+            </File>
+            <File Id="FileId341" Name="Phoenix"  Source="runtime\jre\lib\zi\America\Phoenix">
+            </File>
+            <File Id="FileId342" Name="Port-au-Prince"  Source="runtime\jre\lib\zi\America\Port-au-Prince">
+            </File>
+            <File Id="FileId343" Name="Porto_Velho"  Source="runtime\jre\lib\zi\America\Porto_Velho">
+            </File>
+            <File Id="FileId344" Name="Port_of_Spain"  Source="runtime\jre\lib\zi\America\Port_of_Spain">
+            </File>
+            <File Id="FileId345" Name="Puerto_Rico"  Source="runtime\jre\lib\zi\America\Puerto_Rico">
+            </File>
+            <File Id="FileId346" Name="Rainy_River"  Source="runtime\jre\lib\zi\America\Rainy_River">
+            </File>
+            <File Id="FileId347" Name="Rankin_Inlet"  Source="runtime\jre\lib\zi\America\Rankin_Inlet">
+            </File>
+            <File Id="FileId348" Name="Recife"  Source="runtime\jre\lib\zi\America\Recife">
+            </File>
+            <File Id="FileId349" Name="Regina"  Source="runtime\jre\lib\zi\America\Regina">
+            </File>
+            <File Id="FileId350" Name="Resolute"  Source="runtime\jre\lib\zi\America\Resolute">
+            </File>
+            <File Id="FileId351" Name="Rio_Branco"  Source="runtime\jre\lib\zi\America\Rio_Branco">
+            </File>
+            <File Id="FileId352" Name="Santarem"  Source="runtime\jre\lib\zi\America\Santarem">
+            </File>
+            <File Id="FileId353" Name="Santa_Isabel"  Source="runtime\jre\lib\zi\America\Santa_Isabel">
+            </File>
+            <File Id="FileId354" Name="Santiago"  Source="runtime\jre\lib\zi\America\Santiago">
+            </File>
+            <File Id="FileId355" Name="Santo_Domingo"  Source="runtime\jre\lib\zi\America\Santo_Domingo">
+            </File>
+            <File Id="FileId356" Name="Sao_Paulo"  Source="runtime\jre\lib\zi\America\Sao_Paulo">
+            </File>
+            <File Id="FileId357" Name="Scoresbysund"  Source="runtime\jre\lib\zi\America\Scoresbysund">
+            </File>
+            <File Id="FileId358" Name="Sitka"  Source="runtime\jre\lib\zi\America\Sitka">
+            </File>
+            <File Id="FileId359" Name="St_Johns"  Source="runtime\jre\lib\zi\America\St_Johns">
+            </File>
+            <File Id="FileId360" Name="St_Kitts"  Source="runtime\jre\lib\zi\America\St_Kitts">
+            </File>
+            <File Id="FileId361" Name="St_Lucia"  Source="runtime\jre\lib\zi\America\St_Lucia">
+            </File>
+            <File Id="FileId362" Name="St_Thomas"  Source="runtime\jre\lib\zi\America\St_Thomas">
+            </File>
+            <File Id="FileId363" Name="St_Vincent"  Source="runtime\jre\lib\zi\America\St_Vincent">
+            </File>
+            <File Id="FileId364" Name="Swift_Current"  Source="runtime\jre\lib\zi\America\Swift_Current">
+            </File>
+            <File Id="FileId365" Name="Tegucigalpa"  Source="runtime\jre\lib\zi\America\Tegucigalpa">
+            </File>
+            <File Id="FileId366" Name="Thule"  Source="runtime\jre\lib\zi\America\Thule">
+            </File>
+            <File Id="FileId367" Name="Thunder_Bay"  Source="runtime\jre\lib\zi\America\Thunder_Bay">
+            </File>
+            <File Id="FileId368" Name="Tijuana"  Source="runtime\jre\lib\zi\America\Tijuana">
+            </File>
+            <File Id="FileId369" Name="Toronto"  Source="runtime\jre\lib\zi\America\Toronto">
+            </File>
+            <File Id="FileId370" Name="Tortola"  Source="runtime\jre\lib\zi\America\Tortola">
+            </File>
+            <File Id="FileId371" Name="Vancouver"  Source="runtime\jre\lib\zi\America\Vancouver">
+            </File>
+            <File Id="FileId372" Name="Whitehorse"  Source="runtime\jre\lib\zi\America\Whitehorse">
+            </File>
+            <File Id="FileId373" Name="Winnipeg"  Source="runtime\jre\lib\zi\America\Winnipeg">
+            </File>
+            <File Id="FileId374" Name="Yakutat"  Source="runtime\jre\lib\zi\America\Yakutat">
+            </File>
+            <File Id="FileId375" Name="Yellowknife"  Source="runtime\jre\lib\zi\America\Yellowknife">
+            </File>
+          </Component>
+          <Directory Id="dirid376" Name="Argentina">
+           <Component Id="comp21" DiskId="1" Guid="a7ad5bf2-c7b8-491f-bedc-9f1237f1deb0">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir377" On="uninstall" />
+              <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+               <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+             </RegistryKey>
+             <File Id="FileId378" Name="Buenos_Aires"  Source="runtime\jre\lib\zi\America\Argentina\Buenos_Aires">
+             </File>
+             <File Id="FileId379" Name="Catamarca"  Source="runtime\jre\lib\zi\America\Argentina\Catamarca">
+             </File>
+             <File Id="FileId380" Name="Cordoba"  Source="runtime\jre\lib\zi\America\Argentina\Cordoba">
+             </File>
+             <File Id="FileId381" Name="Jujuy"  Source="runtime\jre\lib\zi\America\Argentina\Jujuy">
+             </File>
+             <File Id="FileId382" Name="La_Rioja"  Source="runtime\jre\lib\zi\America\Argentina\La_Rioja">
+             </File>
+             <File Id="FileId383" Name="Mendoza"  Source="runtime\jre\lib\zi\America\Argentina\Mendoza">
+             </File>
+             <File Id="FileId384" Name="Rio_Gallegos"  Source="runtime\jre\lib\zi\America\Argentina\Rio_Gallegos">
+             </File>
+             <File Id="FileId385" Name="Salta"  Source="runtime\jre\lib\zi\America\Argentina\Salta">
+             </File>
+             <File Id="FileId386" Name="San_Juan"  Source="runtime\jre\lib\zi\America\Argentina\San_Juan">
+             </File>
+             <File Id="FileId387" Name="San_Luis"  Source="runtime\jre\lib\zi\America\Argentina\San_Luis">
+             </File>
+             <File Id="FileId388" Name="Tucuman"  Source="runtime\jre\lib\zi\America\Argentina\Tucuman">
+             </File>
+             <File Id="FileId389" Name="Ushuaia"  Source="runtime\jre\lib\zi\America\Argentina\Ushuaia">
+             </File>
+           </Component>
+          </Directory>
+          <Directory Id="dirid390" Name="Indiana">
+           <Component Id="comp22" DiskId="1" Guid="b29de789-ded0-41de-a1de-9624a7178d57">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir391" On="uninstall" />
+              <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+               <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+             </RegistryKey>
+             <File Id="FileId392" Name="Indianapolis"  Source="runtime\jre\lib\zi\America\Indiana\Indianapolis">
+             </File>
+             <File Id="FileId393" Name="Knox"  Source="runtime\jre\lib\zi\America\Indiana\Knox">
+             </File>
+             <File Id="FileId394" Name="Marengo"  Source="runtime\jre\lib\zi\America\Indiana\Marengo">
+             </File>
+             <File Id="FileId395" Name="Petersburg"  Source="runtime\jre\lib\zi\America\Indiana\Petersburg">
+             </File>
+             <File Id="FileId396" Name="Tell_City"  Source="runtime\jre\lib\zi\America\Indiana\Tell_City">
+             </File>
+             <File Id="FileId397" Name="Vevay"  Source="runtime\jre\lib\zi\America\Indiana\Vevay">
+             </File>
+             <File Id="FileId398" Name="Vincennes"  Source="runtime\jre\lib\zi\America\Indiana\Vincennes">
+             </File>
+             <File Id="FileId399" Name="Winamac"  Source="runtime\jre\lib\zi\America\Indiana\Winamac">
+             </File>
+           </Component>
+          </Directory>
+          <Directory Id="dirid400" Name="Kentucky">
+           <Component Id="comp23" DiskId="1" Guid="7692d301-d7fc-4039-8e88-bb037a066e7f">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir401" On="uninstall" />
+              <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+               <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+             </RegistryKey>
+             <File Id="FileId402" Name="Louisville"  Source="runtime\jre\lib\zi\America\Kentucky\Louisville">
+             </File>
+             <File Id="FileId403" Name="Monticello"  Source="runtime\jre\lib\zi\America\Kentucky\Monticello">
+             </File>
+           </Component>
+          </Directory>
+          <Directory Id="dirid404" Name="North_Dakota">
+           <Component Id="comp24" DiskId="1" Guid="745d80cf-6dfa-4abf-8e88-bfb1d6cb97d7">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir405" On="uninstall" />
+              <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+               <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+             </RegistryKey>
+             <File Id="FileId406" Name="Beulah"  Source="runtime\jre\lib\zi\America\North_Dakota\Beulah">
+             </File>
+             <File Id="FileId407" Name="Center"  Source="runtime\jre\lib\zi\America\North_Dakota\Center">
+             </File>
+             <File Id="FileId408" Name="New_Salem"  Source="runtime\jre\lib\zi\America\North_Dakota\New_Salem">
+             </File>
+           </Component>
+          </Directory>
+         </Directory>
+         <Directory Id="dirid409" Name="Antarctica">
+          <Component Id="comp25" DiskId="1" Guid="157ee39b-375f-4695-b0f3-d11b3e3fa52b">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir410" On="uninstall" />
+             <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+              <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+            </RegistryKey>
+            <File Id="FileId411" Name="Casey"  Source="runtime\jre\lib\zi\Antarctica\Casey">
+            </File>
+            <File Id="FileId412" Name="Davis"  Source="runtime\jre\lib\zi\Antarctica\Davis">
+            </File>
+            <File Id="FileId413" Name="DumontDUrville"  Source="runtime\jre\lib\zi\Antarctica\DumontDUrville">
+            </File>
+            <File Id="FileId414" Name="Macquarie"  Source="runtime\jre\lib\zi\Antarctica\Macquarie">
+            </File>
+            <File Id="FileId415" Name="Mawson"  Source="runtime\jre\lib\zi\Antarctica\Mawson">
+            </File>
+            <File Id="FileId416" Name="McMurdo"  Source="runtime\jre\lib\zi\Antarctica\McMurdo">
+            </File>
+            <File Id="FileId417" Name="Palmer"  Source="runtime\jre\lib\zi\Antarctica\Palmer">
+            </File>
+            <File Id="FileId418" Name="Rothera"  Source="runtime\jre\lib\zi\Antarctica\Rothera">
+            </File>
+            <File Id="FileId419" Name="Syowa"  Source="runtime\jre\lib\zi\Antarctica\Syowa">
+            </File>
+            <File Id="FileId420" Name="Vostok"  Source="runtime\jre\lib\zi\Antarctica\Vostok">
+            </File>
+          </Component>
+         </Directory>
+         <Directory Id="dirid421" Name="Asia">
+          <Component Id="comp26" DiskId="1" Guid="0ea6f677-027c-4daf-9ad2-42e567675bdc">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir422" On="uninstall" />
+             <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+              <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+            </RegistryKey>
+            <File Id="FileId423" Name="Aden"  Source="runtime\jre\lib\zi\Asia\Aden">
+            </File>
+            <File Id="FileId424" Name="Almaty"  Source="runtime\jre\lib\zi\Asia\Almaty">
+            </File>
+            <File Id="FileId425" Name="Amman"  Source="runtime\jre\lib\zi\Asia\Amman">
+            </File>
+            <File Id="FileId426" Name="Anadyr"  Source="runtime\jre\lib\zi\Asia\Anadyr">
+            </File>
+            <File Id="FileId427" Name="Aqtau"  Source="runtime\jre\lib\zi\Asia\Aqtau">
+            </File>
+            <File Id="FileId428" Name="Aqtobe"  Source="runtime\jre\lib\zi\Asia\Aqtobe">
+            </File>
+            <File Id="FileId429" Name="Ashgabat"  Source="runtime\jre\lib\zi\Asia\Ashgabat">
+            </File>
+            <File Id="FileId430" Name="Baghdad"  Source="runtime\jre\lib\zi\Asia\Baghdad">
+            </File>
+            <File Id="FileId431" Name="Bahrain"  Source="runtime\jre\lib\zi\Asia\Bahrain">
+            </File>
+            <File Id="FileId432" Name="Baku"  Source="runtime\jre\lib\zi\Asia\Baku">
+            </File>
+            <File Id="FileId433" Name="Bangkok"  Source="runtime\jre\lib\zi\Asia\Bangkok">
+            </File>
+            <File Id="FileId434" Name="Beirut"  Source="runtime\jre\lib\zi\Asia\Beirut">
+            </File>
+            <File Id="FileId435" Name="Bishkek"  Source="runtime\jre\lib\zi\Asia\Bishkek">
+            </File>
+            <File Id="FileId436" Name="Brunei"  Source="runtime\jre\lib\zi\Asia\Brunei">
+            </File>
+            <File Id="FileId437" Name="Choibalsan"  Source="runtime\jre\lib\zi\Asia\Choibalsan">
+            </File>
+            <File Id="FileId438" Name="Chongqing"  Source="runtime\jre\lib\zi\Asia\Chongqing">
+            </File>
+            <File Id="FileId439" Name="Colombo"  Source="runtime\jre\lib\zi\Asia\Colombo">
+            </File>
+            <File Id="FileId440" Name="Damascus"  Source="runtime\jre\lib\zi\Asia\Damascus">
+            </File>
+            <File Id="FileId441" Name="Dhaka"  Source="runtime\jre\lib\zi\Asia\Dhaka">
+            </File>
+            <File Id="FileId442" Name="Dili"  Source="runtime\jre\lib\zi\Asia\Dili">
+            </File>
+            <File Id="FileId443" Name="Dubai"  Source="runtime\jre\lib\zi\Asia\Dubai">
+            </File>
+            <File Id="FileId444" Name="Dushanbe"  Source="runtime\jre\lib\zi\Asia\Dushanbe">
+            </File>
+            <File Id="FileId445" Name="Gaza"  Source="runtime\jre\lib\zi\Asia\Gaza">
+            </File>
+            <File Id="FileId446" Name="Harbin"  Source="runtime\jre\lib\zi\Asia\Harbin">
+            </File>
+            <File Id="FileId447" Name="Hebron"  Source="runtime\jre\lib\zi\Asia\Hebron">
+            </File>
+            <File Id="FileId448" Name="Hong_Kong"  Source="runtime\jre\lib\zi\Asia\Hong_Kong">
+            </File>
+            <File Id="FileId449" Name="Hovd"  Source="runtime\jre\lib\zi\Asia\Hovd">
+            </File>
+            <File Id="FileId450" Name="Ho_Chi_Minh"  Source="runtime\jre\lib\zi\Asia\Ho_Chi_Minh">
+            </File>
+            <File Id="FileId451" Name="Irkutsk"  Source="runtime\jre\lib\zi\Asia\Irkutsk">
+            </File>
+            <File Id="FileId452" Name="Jakarta"  Source="runtime\jre\lib\zi\Asia\Jakarta">
+            </File>
+            <File Id="FileId453" Name="Jayapura"  Source="runtime\jre\lib\zi\Asia\Jayapura">
+            </File>
+            <File Id="FileId454" Name="Jerusalem"  Source="runtime\jre\lib\zi\Asia\Jerusalem">
+            </File>
+            <File Id="FileId455" Name="Kabul"  Source="runtime\jre\lib\zi\Asia\Kabul">
+            </File>
+            <File Id="FileId456" Name="Kamchatka"  Source="runtime\jre\lib\zi\Asia\Kamchatka">
+            </File>
+            <File Id="FileId457" Name="Karachi"  Source="runtime\jre\lib\zi\Asia\Karachi">
+            </File>
+            <File Id="FileId458" Name="Kashgar"  Source="runtime\jre\lib\zi\Asia\Kashgar">
+            </File>
+            <File Id="FileId459" Name="Kathmandu"  Source="runtime\jre\lib\zi\Asia\Kathmandu">
+            </File>
+            <File Id="FileId460" Name="Kolkata"  Source="runtime\jre\lib\zi\Asia\Kolkata">
+            </File>
+            <File Id="FileId461" Name="Krasnoyarsk"  Source="runtime\jre\lib\zi\Asia\Krasnoyarsk">
+            </File>
+            <File Id="FileId462" Name="Kuala_Lumpur"  Source="runtime\jre\lib\zi\Asia\Kuala_Lumpur">
+            </File>
+            <File Id="FileId463" Name="Kuching"  Source="runtime\jre\lib\zi\Asia\Kuching">
+            </File>
+            <File Id="FileId464" Name="Kuwait"  Source="runtime\jre\lib\zi\Asia\Kuwait">
+            </File>
+            <File Id="FileId465" Name="Macau"  Source="runtime\jre\lib\zi\Asia\Macau">
+            </File>
+            <File Id="FileId466" Name="Magadan"  Source="runtime\jre\lib\zi\Asia\Magadan">
+            </File>
+            <File Id="FileId467" Name="Makassar"  Source="runtime\jre\lib\zi\Asia\Makassar">
+            </File>
+            <File Id="FileId468" Name="Manila"  Source="runtime\jre\lib\zi\Asia\Manila">
+            </File>
+            <File Id="FileId469" Name="Muscat"  Source="runtime\jre\lib\zi\Asia\Muscat">
+            </File>
+            <File Id="FileId470" Name="Nicosia"  Source="runtime\jre\lib\zi\Asia\Nicosia">
+            </File>
+            <File Id="FileId471" Name="Novokuznetsk"  Source="runtime\jre\lib\zi\Asia\Novokuznetsk">
+            </File>
+            <File Id="FileId472" Name="Novosibirsk"  Source="runtime\jre\lib\zi\Asia\Novosibirsk">
+            </File>
+            <File Id="FileId473" Name="Omsk"  Source="runtime\jre\lib\zi\Asia\Omsk">
+            </File>
+            <File Id="FileId474" Name="Oral"  Source="runtime\jre\lib\zi\Asia\Oral">
+            </File>
+            <File Id="FileId475" Name="Phnom_Penh"  Source="runtime\jre\lib\zi\Asia\Phnom_Penh">
+            </File>
+            <File Id="FileId476" Name="Pontianak"  Source="runtime\jre\lib\zi\Asia\Pontianak">
+            </File>
+            <File Id="FileId477" Name="Pyongyang"  Source="runtime\jre\lib\zi\Asia\Pyongyang">
+            </File>
+            <File Id="FileId478" Name="Qatar"  Source="runtime\jre\lib\zi\Asia\Qatar">
+            </File>
+            <File Id="FileId479" Name="Qyzylorda"  Source="runtime\jre\lib\zi\Asia\Qyzylorda">
+            </File>
+            <File Id="FileId480" Name="Rangoon"  Source="runtime\jre\lib\zi\Asia\Rangoon">
+            </File>
+            <File Id="FileId481" Name="Riyadh"  Source="runtime\jre\lib\zi\Asia\Riyadh">
+            </File>
+            <File Id="FileId482" Name="Riyadh87"  Source="runtime\jre\lib\zi\Asia\Riyadh87">
+            </File>
+            <File Id="FileId483" Name="Riyadh88"  Source="runtime\jre\lib\zi\Asia\Riyadh88">
+            </File>
+            <File Id="FileId484" Name="Riyadh89"  Source="runtime\jre\lib\zi\Asia\Riyadh89">
+            </File>
+            <File Id="FileId485" Name="Sakhalin"  Source="runtime\jre\lib\zi\Asia\Sakhalin">
+            </File>
+            <File Id="FileId486" Name="Samarkand"  Source="runtime\jre\lib\zi\Asia\Samarkand">
+            </File>
+            <File Id="FileId487" Name="Seoul"  Source="runtime\jre\lib\zi\Asia\Seoul">
+            </File>
+            <File Id="FileId488" Name="Shanghai"  Source="runtime\jre\lib\zi\Asia\Shanghai">
+            </File>
+            <File Id="FileId489" Name="Singapore"  Source="runtime\jre\lib\zi\Asia\Singapore">
+            </File>
+            <File Id="FileId490" Name="Taipei"  Source="runtime\jre\lib\zi\Asia\Taipei">
+            </File>
+            <File Id="FileId491" Name="Tashkent"  Source="runtime\jre\lib\zi\Asia\Tashkent">
+            </File>
+            <File Id="FileId492" Name="Tbilisi"  Source="runtime\jre\lib\zi\Asia\Tbilisi">
+            </File>
+            <File Id="FileId493" Name="Tehran"  Source="runtime\jre\lib\zi\Asia\Tehran">
+            </File>
+            <File Id="FileId494" Name="Thimphu"  Source="runtime\jre\lib\zi\Asia\Thimphu">
+            </File>
+            <File Id="FileId495" Name="Tokyo"  Source="runtime\jre\lib\zi\Asia\Tokyo">
+            </File>
+            <File Id="FileId496" Name="Ulaanbaatar"  Source="runtime\jre\lib\zi\Asia\Ulaanbaatar">
+            </File>
+            <File Id="FileId497" Name="Urumqi"  Source="runtime\jre\lib\zi\Asia\Urumqi">
+            </File>
+            <File Id="FileId498" Name="Vientiane"  Source="runtime\jre\lib\zi\Asia\Vientiane">
+            </File>
+            <File Id="FileId499" Name="Vladivostok"  Source="runtime\jre\lib\zi\Asia\Vladivostok">
+            </File>
+            <File Id="FileId500" Name="Yakutsk"  Source="runtime\jre\lib\zi\Asia\Yakutsk">
+            </File>
+            <File Id="FileId501" Name="Yekaterinburg"  Source="runtime\jre\lib\zi\Asia\Yekaterinburg">
+            </File>
+            <File Id="FileId502" Name="Yerevan"  Source="runtime\jre\lib\zi\Asia\Yerevan">
+            </File>
+          </Component>
+         </Directory>
+         <Directory Id="dirid503" Name="Atlantic">
+          <Component Id="comp27" DiskId="1" Guid="e8df4f4b-f059-4a7f-a601-4c3d2b9735c3">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir504" On="uninstall" />
+             <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+              <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+            </RegistryKey>
+            <File Id="FileId505" Name="Azores"  Source="runtime\jre\lib\zi\Atlantic\Azores">
+            </File>
+            <File Id="FileId506" Name="Bermuda"  Source="runtime\jre\lib\zi\Atlantic\Bermuda">
+            </File>
+            <File Id="FileId507" Name="Canary"  Source="runtime\jre\lib\zi\Atlantic\Canary">
+            </File>
+            <File Id="FileId508" Name="Cape_Verde"  Source="runtime\jre\lib\zi\Atlantic\Cape_Verde">
+            </File>
+            <File Id="FileId509" Name="Faroe"  Source="runtime\jre\lib\zi\Atlantic\Faroe">
+            </File>
+            <File Id="FileId510" Name="Madeira"  Source="runtime\jre\lib\zi\Atlantic\Madeira">
+            </File>
+            <File Id="FileId511" Name="Reykjavik"  Source="runtime\jre\lib\zi\Atlantic\Reykjavik">
+            </File>
+            <File Id="FileId512" Name="South_Georgia"  Source="runtime\jre\lib\zi\Atlantic\South_Georgia">
+            </File>
+            <File Id="FileId513" Name="Stanley"  Source="runtime\jre\lib\zi\Atlantic\Stanley">
+            </File>
+            <File Id="FileId514" Name="St_Helena"  Source="runtime\jre\lib\zi\Atlantic\St_Helena">
+            </File>
+          </Component>
+         </Directory>
+         <Directory Id="dirid515" Name="Australia">
+          <Component Id="comp28" DiskId="1" Guid="d4225ae8-40be-462f-a7bf-15cd5c6a29f5">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir516" On="uninstall" />
+             <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+              <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+            </RegistryKey>
+            <File Id="FileId517" Name="Adelaide"  Source="runtime\jre\lib\zi\Australia\Adelaide">
+            </File>
+            <File Id="FileId518" Name="Brisbane"  Source="runtime\jre\lib\zi\Australia\Brisbane">
+            </File>
+            <File Id="FileId519" Name="Broken_Hill"  Source="runtime\jre\lib\zi\Australia\Broken_Hill">
+            </File>
+            <File Id="FileId520" Name="Currie"  Source="runtime\jre\lib\zi\Australia\Currie">
+            </File>
+            <File Id="FileId521" Name="Darwin"  Source="runtime\jre\lib\zi\Australia\Darwin">
+            </File>
+            <File Id="FileId522" Name="Eucla"  Source="runtime\jre\lib\zi\Australia\Eucla">
+            </File>
+            <File Id="FileId523" Name="Hobart"  Source="runtime\jre\lib\zi\Australia\Hobart">
+            </File>
+            <File Id="FileId524" Name="Lindeman"  Source="runtime\jre\lib\zi\Australia\Lindeman">
+            </File>
+            <File Id="FileId525" Name="Lord_Howe"  Source="runtime\jre\lib\zi\Australia\Lord_Howe">
+            </File>
+            <File Id="FileId526" Name="Melbourne"  Source="runtime\jre\lib\zi\Australia\Melbourne">
+            </File>
+            <File Id="FileId527" Name="Perth"  Source="runtime\jre\lib\zi\Australia\Perth">
+            </File>
+            <File Id="FileId528" Name="Sydney"  Source="runtime\jre\lib\zi\Australia\Sydney">
+            </File>
+          </Component>
+         </Directory>
+         <Directory Id="dirid529" Name="Etc">
+          <Component Id="comp29" DiskId="1" Guid="14ce7c2d-f5e3-4763-8867-d5fde4f72207">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir530" On="uninstall" />
+             <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+              <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+            </RegistryKey>
+            <File Id="FileId531" Name="GMT"  Source="runtime\jre\lib\zi\Etc\GMT">
+            </File>
+            <File Id="FileId532" Name="GMT+1"  Source="runtime\jre\lib\zi\Etc\GMT+1">
+            </File>
+            <File Id="FileId533" Name="GMT+10"  Source="runtime\jre\lib\zi\Etc\GMT+10">
+            </File>
+            <File Id="FileId534" Name="GMT+11"  Source="runtime\jre\lib\zi\Etc\GMT+11">
+            </File>
+            <File Id="FileId535" Name="GMT+12"  Source="runtime\jre\lib\zi\Etc\GMT+12">
+            </File>
+            <File Id="FileId536" Name="GMT+2"  Source="runtime\jre\lib\zi\Etc\GMT+2">
+            </File>
+            <File Id="FileId537" Name="GMT+3"  Source="runtime\jre\lib\zi\Etc\GMT+3">
+            </File>
+            <File Id="FileId538" Name="GMT+4"  Source="runtime\jre\lib\zi\Etc\GMT+4">
+            </File>
+            <File Id="FileId539" Name="GMT+5"  Source="runtime\jre\lib\zi\Etc\GMT+5">
+            </File>
+            <File Id="FileId540" Name="GMT+6"  Source="runtime\jre\lib\zi\Etc\GMT+6">
+            </File>
+            <File Id="FileId541" Name="GMT+7"  Source="runtime\jre\lib\zi\Etc\GMT+7">
+            </File>
+            <File Id="FileId542" Name="GMT+8"  Source="runtime\jre\lib\zi\Etc\GMT+8">
+            </File>
+            <File Id="FileId543" Name="GMT+9"  Source="runtime\jre\lib\zi\Etc\GMT+9">
+            </File>
+            <File Id="FileId544" Name="GMT-1"  Source="runtime\jre\lib\zi\Etc\GMT-1">
+            </File>
+            <File Id="FileId545" Name="GMT-10"  Source="runtime\jre\lib\zi\Etc\GMT-10">
+            </File>
+            <File Id="FileId546" Name="GMT-11"  Source="runtime\jre\lib\zi\Etc\GMT-11">
+            </File>
+            <File Id="FileId547" Name="GMT-12"  Source="runtime\jre\lib\zi\Etc\GMT-12">
+            </File>
+            <File Id="FileId548" Name="GMT-13"  Source="runtime\jre\lib\zi\Etc\GMT-13">
+            </File>
+            <File Id="FileId549" Name="GMT-14"  Source="runtime\jre\lib\zi\Etc\GMT-14">
+            </File>
+            <File Id="FileId550" Name="GMT-2"  Source="runtime\jre\lib\zi\Etc\GMT-2">
+            </File>
+            <File Id="FileId551" Name="GMT-3"  Source="runtime\jre\lib\zi\Etc\GMT-3">
+            </File>
+            <File Id="FileId552" Name="GMT-4"  Source="runtime\jre\lib\zi\Etc\GMT-4">
+            </File>
+            <File Id="FileId553" Name="GMT-5"  Source="runtime\jre\lib\zi\Etc\GMT-5">
+            </File>
+            <File Id="FileId554" Name="GMT-6"  Source="runtime\jre\lib\zi\Etc\GMT-6">
+            </File>
+            <File Id="FileId555" Name="GMT-7"  Source="runtime\jre\lib\zi\Etc\GMT-7">
+            </File>
+            <File Id="FileId556" Name="GMT-8"  Source="runtime\jre\lib\zi\Etc\GMT-8">
+            </File>
+            <File Id="FileId557" Name="GMT-9"  Source="runtime\jre\lib\zi\Etc\GMT-9">
+            </File>
+            <File Id="FileId558" Name="UCT"  Source="runtime\jre\lib\zi\Etc\UCT">
+            </File>
+            <File Id="FileId559" Name="UTC"  Source="runtime\jre\lib\zi\Etc\UTC">
+            </File>
+          </Component>
+         </Directory>
+         <Directory Id="dirid560" Name="Europe">
+          <Component Id="comp30" DiskId="1" Guid="3203ea16-bb99-4c5c-94d5-4e1f212e63b2">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir561" On="uninstall" />
+             <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+              <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+            </RegistryKey>
+            <File Id="FileId562" Name="Amsterdam"  Source="runtime\jre\lib\zi\Europe\Amsterdam">
+            </File>
+            <File Id="FileId563" Name="Andorra"  Source="runtime\jre\lib\zi\Europe\Andorra">
+            </File>
+            <File Id="FileId564" Name="Athens"  Source="runtime\jre\lib\zi\Europe\Athens">
+            </File>
+            <File Id="FileId565" Name="Belgrade"  Source="runtime\jre\lib\zi\Europe\Belgrade">
+            </File>
+            <File Id="FileId566" Name="Berlin"  Source="runtime\jre\lib\zi\Europe\Berlin">
+            </File>
+            <File Id="FileId567" Name="Brussels"  Source="runtime\jre\lib\zi\Europe\Brussels">
+            </File>
+            <File Id="FileId568" Name="Bucharest"  Source="runtime\jre\lib\zi\Europe\Bucharest">
+            </File>
+            <File Id="FileId569" Name="Budapest"  Source="runtime\jre\lib\zi\Europe\Budapest">
+            </File>
+            <File Id="FileId570" Name="Chisinau"  Source="runtime\jre\lib\zi\Europe\Chisinau">
+            </File>
+            <File Id="FileId571" Name="Copenhagen"  Source="runtime\jre\lib\zi\Europe\Copenhagen">
+            </File>
+            <File Id="FileId572" Name="Dublin"  Source="runtime\jre\lib\zi\Europe\Dublin">
+            </File>
+            <File Id="FileId573" Name="Gibraltar"  Source="runtime\jre\lib\zi\Europe\Gibraltar">
+            </File>
+            <File Id="FileId574" Name="Helsinki"  Source="runtime\jre\lib\zi\Europe\Helsinki">
+            </File>
+            <File Id="FileId575" Name="Istanbul"  Source="runtime\jre\lib\zi\Europe\Istanbul">
+            </File>
+            <File Id="FileId576" Name="Kaliningrad"  Source="runtime\jre\lib\zi\Europe\Kaliningrad">
+            </File>
+            <File Id="FileId577" Name="Kiev"  Source="runtime\jre\lib\zi\Europe\Kiev">
+            </File>
+            <File Id="FileId578" Name="Lisbon"  Source="runtime\jre\lib\zi\Europe\Lisbon">
+            </File>
+            <File Id="FileId579" Name="London"  Source="runtime\jre\lib\zi\Europe\London">
+            </File>
+            <File Id="FileId580" Name="Luxembourg"  Source="runtime\jre\lib\zi\Europe\Luxembourg">
+            </File>
+            <File Id="FileId581" Name="Madrid"  Source="runtime\jre\lib\zi\Europe\Madrid">
+            </File>
+            <File Id="FileId582" Name="Malta"  Source="runtime\jre\lib\zi\Europe\Malta">
+            </File>
+            <File Id="FileId583" Name="Minsk"  Source="runtime\jre\lib\zi\Europe\Minsk">
+            </File>
+            <File Id="FileId584" Name="Monaco"  Source="runtime\jre\lib\zi\Europe\Monaco">
+            </File>
+            <File Id="FileId585" Name="Moscow"  Source="runtime\jre\lib\zi\Europe\Moscow">
+            </File>
+            <File Id="FileId586" Name="Oslo"  Source="runtime\jre\lib\zi\Europe\Oslo">
+            </File>
+            <File Id="FileId587" Name="Paris"  Source="runtime\jre\lib\zi\Europe\Paris">
+            </File>
+            <File Id="FileId588" Name="Prague"  Source="runtime\jre\lib\zi\Europe\Prague">
+            </File>
+            <File Id="FileId589" Name="Riga"  Source="runtime\jre\lib\zi\Europe\Riga">
+            </File>
+            <File Id="FileId590" Name="Rome"  Source="runtime\jre\lib\zi\Europe\Rome">
+            </File>
+            <File Id="FileId591" Name="Samara"  Source="runtime\jre\lib\zi\Europe\Samara">
+            </File>
+            <File Id="FileId592" Name="Simferopol"  Source="runtime\jre\lib\zi\Europe\Simferopol">
+            </File>
+            <File Id="FileId593" Name="Sofia"  Source="runtime\jre\lib\zi\Europe\Sofia">
+            </File>
+            <File Id="FileId594" Name="Stockholm"  Source="runtime\jre\lib\zi\Europe\Stockholm">
+            </File>
+            <File Id="FileId595" Name="Tallinn"  Source="runtime\jre\lib\zi\Europe\Tallinn">
+            </File>
+            <File Id="FileId596" Name="Tirane"  Source="runtime\jre\lib\zi\Europe\Tirane">
+            </File>
+            <File Id="FileId597" Name="Uzhgorod"  Source="runtime\jre\lib\zi\Europe\Uzhgorod">
+            </File>
+            <File Id="FileId598" Name="Vaduz"  Source="runtime\jre\lib\zi\Europe\Vaduz">
+            </File>
+            <File Id="FileId599" Name="Vienna"  Source="runtime\jre\lib\zi\Europe\Vienna">
+            </File>
+            <File Id="FileId600" Name="Vilnius"  Source="runtime\jre\lib\zi\Europe\Vilnius">
+            </File>
+            <File Id="FileId601" Name="Volgograd"  Source="runtime\jre\lib\zi\Europe\Volgograd">
+            </File>
+            <File Id="FileId602" Name="Warsaw"  Source="runtime\jre\lib\zi\Europe\Warsaw">
+            </File>
+            <File Id="FileId603" Name="Zaporozhye"  Source="runtime\jre\lib\zi\Europe\Zaporozhye">
+            </File>
+            <File Id="FileId604" Name="Zurich"  Source="runtime\jre\lib\zi\Europe\Zurich">
+            </File>
+          </Component>
+         </Directory>
+         <Directory Id="dirid605" Name="Indian">
+          <Component Id="comp31" DiskId="1" Guid="25c06555-70f5-4c16-b46d-daaacfc1dc94">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir606" On="uninstall" />
+             <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+              <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+            </RegistryKey>
+            <File Id="FileId607" Name="Antananarivo"  Source="runtime\jre\lib\zi\Indian\Antananarivo">
+            </File>
+            <File Id="FileId608" Name="Chagos"  Source="runtime\jre\lib\zi\Indian\Chagos">
+            </File>
+            <File Id="FileId609" Name="Christmas"  Source="runtime\jre\lib\zi\Indian\Christmas">
+            </File>
+            <File Id="FileId610" Name="Cocos"  Source="runtime\jre\lib\zi\Indian\Cocos">
+            </File>
+            <File Id="FileId611" Name="Comoro"  Source="runtime\jre\lib\zi\Indian\Comoro">
+            </File>
+            <File Id="FileId612" Name="Kerguelen"  Source="runtime\jre\lib\zi\Indian\Kerguelen">
+            </File>
+            <File Id="FileId613" Name="Mahe"  Source="runtime\jre\lib\zi\Indian\Mahe">
+            </File>
+            <File Id="FileId614" Name="Maldives"  Source="runtime\jre\lib\zi\Indian\Maldives">
+            </File>
+            <File Id="FileId615" Name="Mauritius"  Source="runtime\jre\lib\zi\Indian\Mauritius">
+            </File>
+            <File Id="FileId616" Name="Mayotte"  Source="runtime\jre\lib\zi\Indian\Mayotte">
+            </File>
+            <File Id="FileId617" Name="Reunion"  Source="runtime\jre\lib\zi\Indian\Reunion">
+            </File>
+          </Component>
+         </Directory>
+         <Directory Id="dirid618" Name="Pacific">
+          <Component Id="comp32" DiskId="1" Guid="dcc33571-35bb-4b1d-a5df-bd181eb1f22e">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir619" On="uninstall" />
+             <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+              <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+            </RegistryKey>
+            <File Id="FileId620" Name="Apia"  Source="runtime\jre\lib\zi\Pacific\Apia">
+            </File>
+            <File Id="FileId621" Name="Auckland"  Source="runtime\jre\lib\zi\Pacific\Auckland">
+            </File>
+            <File Id="FileId622" Name="Chatham"  Source="runtime\jre\lib\zi\Pacific\Chatham">
+            </File>
+            <File Id="FileId623" Name="Chuuk"  Source="runtime\jre\lib\zi\Pacific\Chuuk">
+            </File>
+            <File Id="FileId624" Name="Easter"  Source="runtime\jre\lib\zi\Pacific\Easter">
+            </File>
+            <File Id="FileId625" Name="Efate"  Source="runtime\jre\lib\zi\Pacific\Efate">
+            </File>
+            <File Id="FileId626" Name="Enderbury"  Source="runtime\jre\lib\zi\Pacific\Enderbury">
+            </File>
+            <File Id="FileId627" Name="Fakaofo"  Source="runtime\jre\lib\zi\Pacific\Fakaofo">
+            </File>
+            <File Id="FileId628" Name="Fiji"  Source="runtime\jre\lib\zi\Pacific\Fiji">
+            </File>
+            <File Id="FileId629" Name="Funafuti"  Source="runtime\jre\lib\zi\Pacific\Funafuti">
+            </File>
+            <File Id="FileId630" Name="Galapagos"  Source="runtime\jre\lib\zi\Pacific\Galapagos">
+            </File>
+            <File Id="FileId631" Name="Gambier"  Source="runtime\jre\lib\zi\Pacific\Gambier">
+            </File>
+            <File Id="FileId632" Name="Guadalcanal"  Source="runtime\jre\lib\zi\Pacific\Guadalcanal">
+            </File>
+            <File Id="FileId633" Name="Guam"  Source="runtime\jre\lib\zi\Pacific\Guam">
+            </File>
+            <File Id="FileId634" Name="Honolulu"  Source="runtime\jre\lib\zi\Pacific\Honolulu">
+            </File>
+            <File Id="FileId635" Name="Johnston"  Source="runtime\jre\lib\zi\Pacific\Johnston">
+            </File>
+            <File Id="FileId636" Name="Kiritimati"  Source="runtime\jre\lib\zi\Pacific\Kiritimati">
+            </File>
+            <File Id="FileId637" Name="Kosrae"  Source="runtime\jre\lib\zi\Pacific\Kosrae">
+            </File>
+            <File Id="FileId638" Name="Kwajalein"  Source="runtime\jre\lib\zi\Pacific\Kwajalein">
+            </File>
+            <File Id="FileId639" Name="Majuro"  Source="runtime\jre\lib\zi\Pacific\Majuro">
+            </File>
+            <File Id="FileId640" Name="Marquesas"  Source="runtime\jre\lib\zi\Pacific\Marquesas">
+            </File>
+            <File Id="FileId641" Name="Midway"  Source="runtime\jre\lib\zi\Pacific\Midway">
+            </File>
+            <File Id="FileId642" Name="Nauru"  Source="runtime\jre\lib\zi\Pacific\Nauru">
+            </File>
+            <File Id="FileId643" Name="Niue"  Source="runtime\jre\lib\zi\Pacific\Niue">
+            </File>
+            <File Id="FileId644" Name="Norfolk"  Source="runtime\jre\lib\zi\Pacific\Norfolk">
+            </File>
+            <File Id="FileId645" Name="Noumea"  Source="runtime\jre\lib\zi\Pacific\Noumea">
+            </File>
+            <File Id="FileId646" Name="Pago_Pago"  Source="runtime\jre\lib\zi\Pacific\Pago_Pago">
+            </File>
+            <File Id="FileId647" Name="Palau"  Source="runtime\jre\lib\zi\Pacific\Palau">
+            </File>
+            <File Id="FileId648" Name="Pitcairn"  Source="runtime\jre\lib\zi\Pacific\Pitcairn">
+            </File>
+            <File Id="FileId649" Name="Pohnpei"  Source="runtime\jre\lib\zi\Pacific\Pohnpei">
+            </File>
+            <File Id="FileId650" Name="Port_Moresby"  Source="runtime\jre\lib\zi\Pacific\Port_Moresby">
+            </File>
+            <File Id="FileId651" Name="Rarotonga"  Source="runtime\jre\lib\zi\Pacific\Rarotonga">
+            </File>
+            <File Id="FileId652" Name="Saipan"  Source="runtime\jre\lib\zi\Pacific\Saipan">
+            </File>
+            <File Id="FileId653" Name="Tahiti"  Source="runtime\jre\lib\zi\Pacific\Tahiti">
+            </File>
+            <File Id="FileId654" Name="Tarawa"  Source="runtime\jre\lib\zi\Pacific\Tarawa">
+            </File>
+            <File Id="FileId655" Name="Tongatapu"  Source="runtime\jre\lib\zi\Pacific\Tongatapu">
+            </File>
+            <File Id="FileId656" Name="Wake"  Source="runtime\jre\lib\zi\Pacific\Wake">
+            </File>
+            <File Id="FileId657" Name="Wallis"  Source="runtime\jre\lib\zi\Pacific\Wallis">
+            </File>
+          </Component>
+         </Directory>
+         <Directory Id="dirid658" Name="SystemV">
+          <Component Id="comp33" DiskId="1" Guid="4cee5771-1b20-4fd3-bdcb-7a6b5c9a6d5d">
+  <CreateFolder/>
+  <RemoveFolder Id="RemoveDir659" On="uninstall" />
+             <RegistryKey Root="HKCU"  Key="Software\srikalyc\FXTalk">
+              <RegistryValue Name="Version" Value="1.0" Type="string" KeyPath="yes"/>
+            </RegistryKey>
+            <File Id="FileId660" Name="AST4"  Source="runtime\jre\lib\zi\SystemV\AST4">
+            </File>
+            <File Id="FileId661" Name="AST4ADT"  Source="runtime\jre\lib\zi\SystemV\AST4ADT">
+            </File>
+            <File Id="FileId662" Name="CST6"  Source="runtime\jre\lib\zi\SystemV\CST6">
+            </File>
+            <File Id="FileId663" Name="CST6CDT"  Source="runtime\jre\lib\zi\SystemV\CST6CDT">
+            </File>
+            <File Id="FileId664" Name="EST5"  Source="runtime\jre\lib\zi\SystemV\EST5">
+            </File>
+            <File Id="FileId665" Name="EST5EDT"  Source="runtime\jre\lib\zi\SystemV\EST5EDT">
+            </File>
+            <File Id="FileId666" Name="HST10"  Source="runtime\jre\lib\zi\SystemV\HST10">
+            </File>
+            <File Id="FileId667" Name="MST7"  Source="runtime\jre\lib\zi\SystemV\MST7">
+            </File>
+            <File Id="FileId668" Name="MST7MDT"  Source="runtime\jre\lib\zi\SystemV\MST7MDT">
+            </File>
+            <File Id="FileId669" Name="PST8"  Source="runtime\jre\lib\zi\SystemV\PST8">
+            </File>
+            <File Id="FileId670" Name="PST8PDT"  Source="runtime\jre\lib\zi\SystemV\PST8PDT">
+            </File>
+            <File Id="FileId671" Name="YST9"  Source="runtime\jre\lib\zi\SystemV\YST9">
+            </File>
+            <File Id="FileId672" Name="YST9YDT"  Source="runtime\jre\lib\zi\SystemV\YST9YDT">
+            </File>
+          </Component>
+         </Directory>
+        </Directory>
+       </Directory>
+      </Directory>
+     </Directory>
+   </Directory>
+  </Directory>
+  <Directory Id="ProgramMenuFolder">
+    <Directory Id="ProgramMenuDir" Name="srikalyc">
+      <Component Id="comp34" Guid="6fc77f6d-5a5b-4eb4-9d0d-bc62e5eb8569">
+        <RemoveFolder Id="ProgramMenuDir" On="uninstall" />
+         <RegistryValue Root="HKCU" Key="Software\srikalyc\FXTalk" Type="string" Value="" />
+      </Component>
+    </Directory>
+ </Directory>
+ </Directory>
+ <Feature Id="DefaultFeature" Title="Main Feature" Level="1">
+    <ComponentRef Id="comp0" />
+    <ComponentRef Id="comp1" />
+    <ComponentRef Id="comp2" />
+    <ComponentRef Id="comp3" />
+    <ComponentRef Id="comp4" />
+    <ComponentRef Id="comp5" />
+    <ComponentRef Id="comp6" />
+    <ComponentRef Id="comp7" />
+    <ComponentRef Id="comp8" />
+    <ComponentRef Id="comp9" />
+    <ComponentRef Id="comp10" />
+    <ComponentRef Id="comp11" />
+    <ComponentRef Id="comp12" />
+    <ComponentRef Id="comp13" />
+    <ComponentRef Id="comp14" />
+    <ComponentRef Id="comp15" />
+    <ComponentRef Id="comp16" />
+    <ComponentRef Id="comp17" />
+    <ComponentRef Id="comp18" />
+    <ComponentRef Id="comp19" />
+    <ComponentRef Id="comp20" />
+    <ComponentRef Id="comp21" />
+    <ComponentRef Id="comp22" />
+    <ComponentRef Id="comp23" />
+    <ComponentRef Id="comp24" />
+    <ComponentRef Id="comp25" />
+    <ComponentRef Id="comp26" />
+    <ComponentRef Id="comp27" />
+    <ComponentRef Id="comp28" />
+    <ComponentRef Id="comp29" />
+    <ComponentRef Id="comp30" />
+    <ComponentRef Id="comp31" />
+    <ComponentRef Id="comp32" />
+    <ComponentRef Id="comp33" />
+    <ComponentRef Id="comp34" />
+    <ComponentRef Id="CleanupMainApplicationFolder" />
+ </Feature>
+</Include>
